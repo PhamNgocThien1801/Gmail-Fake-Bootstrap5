@@ -1,0 +1,719 @@
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #F6F8FC;
+  font-family: Google Sans, Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+  overflow: hidden;
+}
+body .navbar {
+  width: 5%;
+  min-width: 4.25rem;
+  background-color: #E9F1FB;
+}
+body .navbar .option {
+  list-style: none;
+}
+body .navbar .option li {
+  flex-direction: column;
+  margin: 1.25rem auto 0rem auto;
+}
+body .navbar .option li .hamberger-button {
+  font-size: 1.375rem;
+}
+body .navbar .option li i {
+  font-size: 1rem;
+}
+body .navbar .option li p {
+  color: #1f1f1f;
+  font-weight: 500;
+  font-size: 0.75rem;
+  margin: 0.375rem 0rem 0.375rem 0rem;
+}
+body .navbar .option .first-option i {
+  margin-top: 1.125rem;
+  background-color: #d3e3fd;
+  width: 2.75rem;
+  height: 1.875rem;
+  position: relative;
+}
+body .navbar .option .first-option i .noti {
+  background-color: #b3261e;
+  position: absolute;
+  bottom: 1rem;
+  left: 1.375rem;
+  font-size: 0.688rem;
+  color: #fff;
+  padding: 0.063rem 0.25rem;
+  font-family: Google Sans;
+  border: 0.125rem solid #b3261e;
+}
+body .navbar .option .first-option p {
+  color: #1f1f1f;
+  font-weight: 500;
+  font-size: 0.75rem;
+}
+body .navbar .option .option-content i {
+  width: 2.75rem;
+  height: 1.875rem;
+  position: relative;
+}
+body .navbar .option .option-content i:hover {
+  background-color: #EAEBEF;
+}
+body .navbar .option .option-content p {
+  color: #1f1f1f;
+  font-weight: 500;
+  font-size: 0.75rem;
+}
+body .navbar .option i {
+  font-size: 1rem;
+}
+body .right-content {
+  width: 95%;
+  height: 37.5rem;
+}
+body .right-content .search-bar {
+  height: 3rem;
+}
+body .right-content .search-bar .logo {
+  width: 20%;
+  min-width: 16rem;
+}
+body .right-content .search-bar .logo img {
+  width: 6.813rem;
+  height: 2.5rem;
+}
+body .right-content .search-bar .search-box {
+  width: 40%;
+  position: relative;
+}
+body .right-content .search-bar .search-box i {
+  position: absolute;
+}
+body .right-content .search-bar .search-box input {
+  padding: 0 1.25rem 0 2.813rem;
+  border-radius: 1.25rem;
+  background-color: #EAF1FB;
+}
+body .right-content .search-bar .search-box input:focus {
+  background-color: #fff;
+  outline: none;
+  box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 1.25rem 1.25rem 0 0;
+}
+body .right-content .search-bar .search-box input:focus + .table-search {
+  display: block;
+}
+body .right-content .search-bar .search-box input ::placeholder {
+  font-size: 1rem;
+}
+body .right-content .search-bar .search-box .table-search {
+  background-color: #fff;
+  position: absolute;
+  top: 100%;
+  display: none;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 1.25rem 1.25rem;
+  z-index: 1;
+}
+body .right-content .search-bar .search-box .table-search .top-content {
+  height: 2.875rem;
+  border-top: #e1e5e9 solid 1px;
+  border-bottom: #e1e5e9 solid 1px;
+}
+body .right-content .search-bar .search-box .table-search .top-content button {
+  border: #e1e5e9 solid 1px;
+  background-color: #fff;
+  font-size: 0.813rem;
+}
+body .right-content .search-bar .search-box .table-search .top-content button:hover {
+  background-color: #e7eaee;
+}
+body .right-content .search-bar .search-box .table-search .bottom-content ul li {
+  list-style: none;
+  font-size: 0.875rem;
+  border-left: white solid 2px;
+}
+body .right-content .search-bar .search-box .table-search .bottom-content ul li:hover {
+  background-color: #F2F6FC;
+  border-left: rgb(103, 103, 235) solid 2px;
+}
+body .right-content .search-bar .search-box .table-search .bottom-content ul li .avatar-user {
+  width: 2.188rem;
+  height: 2.188rem;
+}
+body .right-content .search-bar .option {
+  width: 40%;
+}
+body .right-content .search-bar .option .status-active {
+  width: 30%;
+  min-width: 5.125rem;
+  margin: auto 0rem auto 0.313rem;
+  position: relative;
+}
+body .right-content .search-bar .option .status-active #toggleStatus:checked ~ .status-content {
+  display: block;
+}
+body .right-content .search-bar .option .status-active #toggleStatus:not(:checked) ~ .status-content {
+  display: none;
+}
+body .right-content .search-bar .option .status-active button {
+  background-color: #E4ECF8;
+}
+body .right-content .search-bar .option .status-active button:hover {
+  background-color: #EAF1FB;
+}
+body .right-content .search-bar .option .status-active button i:first-child {
+  color: green;
+  font-size: 0.75rem;
+}
+body .right-content .search-bar .option .status-active button i {
+  font-size: 0.625rem;
+}
+body .right-content .search-bar .option .status-active .status-content {
+  position: absolute;
+  top: 130%;
+  left: 50%;
+  width: 150%;
+  background-color: #fff;
+  z-index: 1;
+  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+}
+body .right-content .search-bar .option .status-active .status-content p :first-child {
+  font-size: 1rem;
+  color: black;
+}
+body .right-content .search-bar .option .status-active .status-content .status-option {
+  height: 3.125rem;
+}
+body .right-content .search-bar .option .status-active .status-content .status-option:hover {
+  background-color: #E8EAED;
+  border-bottom: #444746;
+}
+body .right-content .search-bar .option .status-active .status-content .status-option i {
+  font-size: 0.875rem;
+}
+body .right-content .search-bar .option .status-active .status-content .status-option .circle-icon {
+  color: green;
+}
+body .right-content .search-bar .option .status-active .status-content .status-option .ban-icon {
+  color: red;
+}
+body .right-content .search-bar .option .status-active .status-content .status-action {
+  height: 2.5rem;
+  border-top: #e1e5e9 solid 1px;
+  border-bottom: #e1e5e9 solid 1px;
+}
+body .right-content .search-bar .option .status-active .status-content .status-action:hover {
+  background-color: #E8EAED;
+}
+body .right-content .search-bar .option .status-active .status-content .describe {
+  font-size: 0.75rem;
+  color: #AEB0AF;
+}
+body .right-content .search-bar .option .option-content {
+  width: 10rem;
+}
+body .right-content .search-bar .option .option-content ul {
+  list-style: none;
+  padding: 0rem 0.313rem;
+}
+body .right-content .search-bar .option .option-content ul li {
+  list-style: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: 0rem 0.313rem 0rem 0.313rem;
+  font-size: 1.25rem;
+  color: gray;
+  position: relative;
+}
+body .right-content .search-bar .option .option-content ul li i:hover {
+  background-color: #E8EAED;
+}
+body .right-content .search-bar .option .option-content ul li i:hover .tooltiptext {
+  visibility: visible;
+}
+body .right-content .search-bar .option .option-content ul li .tooltiptext {
+  visibility: hidden;
+  position: absolute;
+  background-color: #444746;
+  color: #fff;
+  padding: 0.125rem 0.625rem;
+  z-index: 1;
+  top: 120%;
+  left: -20%;
+  font-size: 0.875rem;
+  white-space: nowrap;
+}
+body .right-content .search-bar .option .option-content ul li:hover .tooltiptext {
+  visibility: visible;
+}
+body .right-content .search-bar .option .avatar {
+  width: 8.375rem;
+  border: rgb(230, 222, 222) solid 1px;
+}
+body .right-content .search-bar .option .avatar .logo-fpt {
+  width: 5.625rem;
+  height: 2rem;
+}
+body .right-content .search-bar .option .avatar .avatar-user {
+  width: 2rem;
+  height: 2rem;
+}
+body .right-content .search-bar .option .avatar .popover {
+  left: 0%;
+  min-width: 21.875rem;
+  top: 130%;
+  z-index: 1;
+  background-color: #dde0e6;
+  z-index: 2;
+}
+body .right-content .search-bar .option .avatar .popover .name-user .user-infomation .popover-top {
+  padding-top: 1.2rem;
+}
+body .right-content .search-bar .option .avatar .popover .name-user .user-infomation .popover-top p {
+  font-size: 0.875rem;
+}
+body .right-content .search-bar .option .avatar .popover .name-user .user-infomation .popover-top .managed {
+  font-size: 0.75rem;
+}
+body .right-content .search-bar .option .avatar .popover .name-user .user-infomation .popover-bottom button {
+  background-color: #dde0e6;
+  padding: 0.563rem 1.438rem;
+  border-radius: 6.25rem;
+  border: 1px solid #747775;
+  color: #0b57d0;
+  font-size: 0.875rem;
+}
+body .right-content .search-bar .option .avatar .popover .name-user .user-infomation .popover-bottom button :hover {
+  background-color: #e1e9f7;
+}
+body .right-content .search-bar .option .avatar .popover .name-user .user-infomation .popover-bottom .avatar-user {
+  height: 5rem;
+  width: 5rem;
+  margin-top: 1.375rem;
+}
+body .right-content .search-bar .option .avatar .popover .more-account .add-account {
+  height: 3.625rem;
+  padding: 0 0.938rem;
+  margin: 0 1px;
+  background-color: #fff;
+  border-radius: 6.25rem 0 0 6.25rem;
+}
+body .right-content .search-bar .option .avatar .popover .more-account .add-account i {
+  font-size: 1rem;
+  padding: 0.313rem;
+}
+body .right-content .search-bar .option .avatar .popover .more-account .add-account p {
+  margin-left: 0.5rem;
+}
+body .right-content .search-bar .option .avatar .popover .more-account .add-account:hover {
+  background-color: #bebebe;
+}
+body .right-content .search-bar .option .avatar .popover .more-account .add-account:hover i {
+  background-color: #fff;
+  border-radius: 50%;
+}
+body .right-content .search-bar .option .avatar .popover .more-account .sign-out {
+  height: 3.625rem;
+  padding: 0 0.938rem;
+  margin: 0 1px;
+  background-color: #fff;
+  border-radius: 0 6.25rem 6.25rem 0;
+}
+body .right-content .search-bar .option .avatar .popover .more-account .sign-out i {
+  font-size: 1rem;
+  padding: 0.313rem;
+}
+body .right-content .search-bar .option .avatar .popover .more-account .sign-out p {
+  margin-left: 0.5rem;
+}
+body .right-content .search-bar .option .avatar .popover .more-account .sign-out:hover {
+  background-color: #bebebe;
+}
+body .right-content .search-bar .option .avatar .popover .policy .add-account {
+  height: 3.625rem;
+  padding: 0 0.938rem;
+  margin: 0 1px;
+}
+body .right-content .search-bar .option .avatar .popover .policy .sign-out {
+  height: 3.625rem;
+  padding: 0 0.938rem;
+  margin: 0 1px;
+}
+body .right-content .search-bar .option .avatar .popover .policy p:hover {
+  background-color: rgb(216, 210, 210);
+}
+body .right-content .content {
+  height: auto;
+}
+body .right-content .content .navbar-content {
+  width: 20%;
+  min-width: 16rem;
+  height: auto;
+}
+body .right-content .content .navbar-content .compose-button {
+  height: 3.5rem;
+  width: 8.625rem;
+  background-color: #C1E7FF;
+  margin: 0.625rem 0rem 0rem 0.625rem;
+  font-weight: 500;
+}
+body .right-content .content .navbar-content .compose-button i {
+  font-size: 1rem;
+  margin-right: 0.75rem;
+}
+body .right-content .content .navbar-content .modal .modal-compose {
+  min-width: 28.75rem;
+}
+body .right-content .content .navbar-content .modal .modal-compose .modal-head {
+  height: 1.25rem;
+}
+body .right-content .content .navbar-content .modal .modal-compose .modal-head p {
+  font-size: 0.875rem;
+}
+body .right-content .content .navbar-content .modal .modal-compose .modal-body {
+  padding: 0 1rem;
+}
+body .right-content .content .navbar-content .modal .modal-compose .modal-body .modal-email-address {
+  position: relative;
+}
+body .right-content .content .navbar-content .modal .modal-compose .modal-body .modal-email-address .text-placeholder {
+  position: absolute;
+  top: 13%;
+  left: 0%;
+  display: none;
+}
+body .right-content .content .navbar-content .modal .modal-compose .modal-body .modal-email-address .input-email-address {
+  border: none;
+  height: 2.25rem;
+  border-bottom: 1px solid black;
+}
+body .right-content .content .navbar-content .modal .modal-compose .modal-body .modal-email-address .input-email-address:focus {
+  outline: none;
+  padding-left: 1.563rem;
+}
+body .right-content .content .navbar-content .modal .modal-compose .modal-body .modal-email-address .input-email-address:focus + .text-placeholder {
+  display: block;
+}
+body .right-content .content .navbar-content .modal .modal-compose .modal-body .modal-email-title input {
+  border: none;
+  height: 2.25rem;
+  border-bottom: 1px solid black;
+}
+body .right-content .content .navbar-content .modal .modal-compose .modal-body .modal-email-title input:focus {
+  outline: none;
+}
+body .right-content .content .navbar-content .modal .modal-compose .modal-body .modal-email-content .input-compose {
+  height: 13.688rem;
+  resize: none;
+}
+body .right-content .content .navbar-content .modal .modal-compose .modal-body .modal-email-content .input-compose:focus {
+  outline: none;
+}
+body .right-content .content .navbar-content .modal .modal-compose .modal-bottom .option-text {
+  height: 2.25rem;
+  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+}
+body .right-content .content .navbar-content .modal .modal-compose .modal-bottom .option-text ul {
+  list-style: none;
+  padding-left: 0;
+}
+body .right-content .content .navbar-content .modal .modal-compose .modal-bottom .option-text ul li {
+  width: auto;
+  padding: 4px 6px;
+}
+body .right-content .content .navbar-content .modal .modal-compose .modal-bottom .option-text ul li:hover {
+  background-color: #E8EAED;
+}
+body .right-content .content .navbar-content .modal .modal-compose .modal-bottom .option-send .button-send {
+  height: 2.25rem;
+  padding: 0 1rem;
+  background-color: #0b57d0;
+  border-radius: 6.25rem 0 0 6.25rem;
+  color: #fff;
+}
+body .right-content .content .navbar-content .modal .modal-compose .modal-bottom .option-send .button-down {
+  border: none;
+  border-left: solid 1px black;
+  background-color: #0b57d0;
+  height: 2.25rem;
+  width: 2rem;
+  border-radius: 0 6.25rem 6.25rem 0;
+}
+body .right-content .content .navbar-content .modal .modal-compose .modal-bottom .option-send .button-down .down-icon {
+  color: #fff;
+}
+body .right-content .content .navbar-content .modal .modal-compose .modal-bottom .option-send ul {
+  list-style: none;
+  padding-left: 0;
+}
+body .right-content .content .navbar-content .modal .modal-compose .modal-bottom .option-send ul li {
+  width: auto;
+  padding: 4px 6px;
+}
+body .right-content .content .navbar-content .modal .modal-compose .modal-bottom .option-send ul li:hover {
+  background-color: #E8EAED;
+}
+body .right-content .content .navbar-content .navbar-content-option {
+  list-style: none;
+  padding: 0rem 0.5rem 0rem 0.625rem;
+}
+body .right-content .content .navbar-content .navbar-content-option li {
+  height: 2rem;
+  position: relative;
+}
+body .right-content .content .navbar-content .navbar-content-option li:hover {
+  background-color: #EAEBEF;
+}
+body .right-content .content .navbar-content .navbar-content-option li:hover .text-tooltip {
+  visibility: visible;
+}
+body .right-content .content .navbar-content .navbar-content-option li i {
+  padding: 0rem 0.75rem 0rem 1rem;
+}
+body .right-content .content .navbar-content .navbar-content-option li strong {
+  margin: 0rem 0.75rem 0rem auto;
+  font-size: 0.75rem;
+}
+body .right-content .content .navbar-content .navbar-content-option li .text-tooltip {
+  position: absolute;
+  left: 100%;
+  background-color: #444746;
+  padding: 4px;
+  font-size: 0.75rem;
+  color: #fff;
+  visibility: hidden;
+}
+body .right-content .content .navbar-content .navbar-content-option li:first-child {
+  background-color: #d3e3fd;
+}
+body .right-content .content .navbar-content .label {
+  padding: 0rem 0.625rem 0rem 1.625rem;
+}
+body .right-content .content .email-content {
+  flex-grow: 1;
+  width: 80%;
+  padding-left: 0.5rem;
+}
+body .right-content .content .email-content .email-option {
+  height: 3rem;
+  padding: 0.625rem 2.5rem 0.625rem 1.125rem;
+  border-radius: 1.25rem 1.25rem 0rem 0rem;
+  background-color: #fff;
+}
+body .right-content .content .email-content .email-option input {
+  width: 0.875rem;
+  height: 0.875rem;
+  margin: 0rem 2px 0rem 0.625rem;
+}
+body .right-content .content .email-content .email-option button {
+  background-color: #fff;
+  color: #AEB0AF;
+}
+body .right-content .content .email-content .email-option button :last-child {
+  color: #1f1f1f;
+}
+body .right-content .content .email-content .email-option button :last-child:hover {
+  background-color: #EAEBEF;
+  border-radius: 50%;
+  width: 1.3rem;
+  height: 1.3rem;
+}
+body .right-content .content .email-content .email-option button .left-icon:hover .text-tooltip-pagination {
+  visibility: visible;
+}
+body .right-content .content .email-content .email-option button .right-icon:hover .text-tooltip-pagination {
+  visibility: visible;
+}
+body .right-content .content .email-content .email-option button i .text-tooltip-pagination {
+  font-family: Google Sans, Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+  position: absolute;
+  background-color: #444746;
+  font-size: 0.875rem;
+  padding: 0.313rem 0.5rem;
+  color: #fff;
+  top: 19%;
+  right: 3%;
+  visibility: hidden;
+}
+body .right-content .content .email-content .email-option .scrooll-icon {
+  padding: 0.625rem 4px;
+  margin-right: 0.875rem;
+  position: relative;
+  font-size: 0.625rem;
+  margin-right: 1.875rem;
+}
+body .right-content .content .email-content .email-option .scrooll-icon:hover {
+  background-color: #EAEBEF;
+  border-radius: 0.313rem;
+}
+body .right-content .content .email-content .email-option .scrooll-icon:hover .text-tooltip {
+  visibility: visible;
+}
+body .right-content .content .email-content .email-option .arrow-icon {
+  padding: 0.5rem;
+  margin-right: 0.875rem;
+  position: relative;
+  font-size: 0.875rem;
+  color: #444746;
+  margin-right: 1.875rem;
+}
+body .right-content .content .email-content .email-option .arrow-icon:hover {
+  background-color: #EAEBEF;
+}
+body .right-content .content .email-content .email-option .arrow-icon:hover .text-tooltip {
+  visibility: visible;
+}
+body .right-content .content .email-content .email-option .vertical-icon {
+  padding: 0.5rem 0.875rem;
+  position: relative;
+}
+body .right-content .content .email-content .email-option .vertical-icon:hover {
+  background-color: #EAEBEF;
+}
+body .right-content .content .email-content .email-option .vertical-icon:hover .text-tooltip {
+  visibility: visible;
+}
+body .right-content .content .email-content .email-option .pagination {
+  padding: 2px 1rem;
+  position: relative;
+  margin: 0rem 0.313rem 0rem auto;
+  font-size: 0.75rem;
+  color: #5e5e5e;
+}
+body .right-content .content .email-content .email-option .pagination:hover {
+  background-color: #EAEBEF;
+}
+body .right-content .content .email-content .email-option .pagination:hover div {
+  visibility: visible;
+}
+body .right-content .content .email-content .email-option .pagination p {
+  padding: 5px 0;
+}
+body .right-content .content .email-content .email-option .pagination .pagination-option {
+  position: absolute;
+  background-color: #fff;
+  width: 150%;
+  left: 0%;
+  top: 100%;
+  visibility: hidden;
+  z-index: 1;
+}
+body .right-content .content .email-content .email-option .pagination .pagination-option p {
+  height: 2.5rem;
+}
+body .right-content .content .email-content .email-option .pagination .pagination-option p:hover {
+  background-color: #EAEBEF;
+}
+body .right-content .content .email-content .email-option .pagination .pagination-option .newest-text {
+  color: #CCCCCC;
+}
+body .right-content .content .email-content .email-option .text-tooltip {
+  font-family: Google Sans, Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+  position: absolute;
+  right: 0%;
+  top: 100%;
+  background-color: #444746;
+  font-size: 0.875rem;
+  padding: 0.313rem 0.5rem;
+  color: #fff;
+  visibility: hidden;
+}
+body .right-content .content .email-content ul {
+  list-style: none;
+  height: 80%;
+  background-color: #fff;
+  border-radius: 0rem 0rem 1.25rem 1.25rem;
+  overflow: auto;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+body .right-content .content .email-content ul li {
+  width: 99%;
+  height: 1.25rem;
+  background-color: #F2F6FC;
+  padding: 0.625rem 0rem;
+  border-bottom: #e1e5e9 solid 1px;
+  border-top: transparent solid 2px;
+  border-left: transparent solid 2px;
+  border-right: transparent solid 2px;
+  overflow: hidden;
+}
+body .right-content .content .email-content ul li:hover {
+  border: #DADCE0 solid 2px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+body .right-content .content .email-content ul li:hover strong {
+  visibility: hidden;
+  width: 0;
+}
+body .right-content .content .email-content ul li:hover .option-email-content i {
+  visibility: visible;
+  width: 2rem;
+}
+body .right-content .content .email-content ul li input {
+  margin-left: 1.875rem;
+}
+body .right-content .content .email-content ul li i {
+  margin: 0rem 0.313rem;
+}
+body .right-content .content .email-content ul li p {
+  margin: 0rem 0.625rem 0rem 0.625rem;
+}
+body .right-content .content .email-content ul li strong {
+  margin: 0rem 0.625rem 0rem 1.875rem;
+  font-size: 0.75rem;
+  width: 4.5rem;
+}
+body .right-content .content .email-content ul li .name-email {
+  width: 10.5rem;
+  margin-right: 2rem;
+}
+body .right-content .content .email-content ul li span {
+  width: 70%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+body .right-content .content .email-content ul li .option-email-content i {
+  width: 2rem;
+  height: 2rem;
+  position: relative;
+  visibility: hidden;
+  width: 0;
+}
+body .right-content .content .email-content ul li .option-email-content i:hover {
+  background-color: #EAEBEF;
+}
+body .right-content .content .email-content ul .email-footer {
+  height: 2.5rem;
+  padding: 1rem 0rem 1rem 0rem;
+  font-size: 0.75rem;
+  color: #5f6368;
+  border-radius: 0rem 0rem 1.25 1.25rem;
+}
+body .right-content .content .email-content ul .email-footer .using-memory {
+  padding-left: 1rem;
+}
+body .right-content .content .email-content ul .email-footer .details {
+  padding-right: 1rem;
+}
+body #toggleStatus {
+  display: none;
+}
+body #toggleStatus:checked ~ .status-content {
+  display: block;
+}
+body #toggleStatus:not(:checked) ~ .status-content {
+  display: none;
+}
+body .popover {
+  display: none;
+}
+body .popover.active {
+  display: block;
+}
+
+/*# sourceMappingURL=style.css.map */

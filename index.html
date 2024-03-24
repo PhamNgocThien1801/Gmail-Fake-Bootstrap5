@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Gmail Fake FlexBox</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google Sans|Roboto|RobotoDraft|Helvetica|Arial|sans-serif">
+        <link href="./css/style.css" rel="stylesheet">
+        <link href="./assets/fontawesome/fontawesome-free-6.5.1-web/css/fontawesome.css" rel="stylesheet" />
+        <link href="./assets/fontawesome/fontawesome-free-6.5.1-web/css/brands.css" rel="stylesheet" />
+        <link href="./assets/fontawesome/fontawesome-free-6.5.1-web/css/solid.css" rel="stylesheet" />
+        <link href="./assets/fontawesome/fontawesome-free-6.5.1-web/css/regular.css" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <body class="d-flex h-100">
+        <!-- navbar -->
+        <div class="navbar align-content-start d-flex">
+            <ul class="option ps-0 text-center w-100">
+                <!-- hamberger button -->
+                <li class="d-flex text-center">
+                    <input type="checkbox" id="hamberger-checkbox" class="d-none">
+                    <label class="hamberger-label" for="hamberger-checkbox">
+                        <i class="fa-solid fa-bars hamberger-button mx-auto"></i>
+                    </label>
+                </li>
+                <!-- Mail button -->
+                <li class="first-option d-flex text-center">
+                    <i class="fa-solid fa-envelope d-flex mx-auto rounded-pill align-items-center justify-content-center">
+                        <div class="noti rounded-pill">
+                            <span>99+</span>
+                        </div>
+                    </i>
+                    <p>Mail</p>
+                </li>
+                <!-- Chat button -->
+                <li class="option-content d-flex text-center">
+                    <i class="fa-regular fa-message d-flex mx-auto rounded-pill align-items-center justify-content-center"></i>
+                    <p>Chat</p>
+                </li>
+                <!-- Meet button -->
+                <li class="option-content d-flex text-center">
+                    <i class="fa-solid fa-video d-flex mx-auto rounded-pill align-items-center justify-content-center"></i>
+                    <p>Meet</p>
+                </li>
+            </ul>
+        </div>
+        <div class="right-content h-100">
+            <!-- searchbar -->
+            <div class="search-bar d-flex p-1 w-100">
+                <!-- logo -->
+                <div class="logo h-100">
+                    <!-- img -->
+                    <img src="./images/logo-gmail.png" alt="logo" />
+                </div>
+                <!-- searchbar -->
+                <div class="search-box d-flex align-items-center ms-0 h-100">
+                    <!-- search box -->
+                    <i class="fa-solid fa-magnifying-glass ps-3"></i>
+                    <input type="text" placeholder="Search in emails" class="w-100 h-100 border-0"/>
+                    <!-- table search -->
+                    <div class="table-search w-100">
+                        <div class="top-content d-flex align-items-center my-auto">
+                            <button class="mx-1 py-1 px-2 rounded-3">Has attachment</button>
+                            <button class="mx-1 py-1 px-2 rounded-3">Last 7 days</button>
+                            <button class="mx-1 py-1 px-2 rounded-3">From me</button>
+                        </div>
+                        <div class="bottom-content">
+                            <ul class="ps-0">
+                                <li class="d-flex p-1">
+                                    <div>
+                                        <img class="avatar-user" src="./images/user-img.jpg" alt="avatar-user"/>
+                                    </div>
+                                    <div>
+                                        <p class="email-user m-0 ps-2">thienpnSE150137@fpt.edu.vn</p>
+                                        <p class="username m-0 ps-2">Phạm Ngọc Thiện (K15 HCM)</p>
+                                    </div>
+                                </li>
+                                <li class="d-flex p-1">
+                                    <div>
+                                        <img class="avatar-user" src="./images/user-img.jpg" alt="avatar-user"/>
+                                    </div>
+                                    <div>
+                                        <p class="email-user m-0 ps-2">thienpnSE150137@fpt.edu.vn</p>
+                                        <p class="username m-0 ps-2">Phạm Ngọc Thiện (K15 HCM)</p>
+                                    </div>
+                                </li>
+                                <li class="d-flex p-1">
+                                    <div>
+                                        <img class="avatar-user" src="./images/user-img.jpg" alt="avatar-user"/>
+                                    </div>
+                                    <div>
+                                        <p class="email-user m-0 ps-2">thienpnSE150137@fpt.edu.vn</p>
+                                        <p class="username m-0 ps-2">Phạm Ngọc Thiện (K15 HCM)</p>
+                                    </div>
+                                </li>
+                                <li class="d-flex p-1">
+                                    <div>
+                                        <img class="avatar-user" src="./images/user-img.jpg" alt="avatar-user"/>
+                                    </div>
+                                    <div>
+                                        <p class="email-user m-0 ps-2">thienpnSE150137@fpt.edu.vn</p>
+                                        <p class="username m-0 ps-2">Phạm Ngọc Thiện (K15 HCM)</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- option -->
+                <div class="option d-flex justify-content-end position-relative h-100">
+                    <!-- status -->
+                    <div class="status-active d-flex justify-content-end h-100">
+                        <!-- satus active -->
+                        <input type="checkbox" id="toggleStatus" >
+                        <button class="rounded-pill mt-0 h-100 border-0">
+                            <label class="toggleStatus" for="toggleStatus">
+                                <i class="fa-solid fa-circle px-2"></i>Active <i class="fa-solid fa-angle-down"></i>
+                            </label>
+                        </button>
+                        <!-- popover satus content -->
+                        <div class="status-content py-2 rounded-3">
+                            <div class="status-option d-flex ">
+                                <i class="fa-solid fa-circle circle-icon d-flex align-items-center mx-3"></i>
+                                <div class="status-option-content my-auto">
+                                    <p class="m-0 d-flex">Automatic</p>
+                                    <p class="describe m-0">Based on chat activity</p>
+                                </div>
+                                <i class="fa-solid fa-check check-icon d-flex align-items-center ms-auto me-3"></i>
+                            </div>
+                            <div class="status-option d-flex">
+                                <i class="fa-solid fa-ban ban-icon align-items-center d-flex mx-3"></i>
+                                <div class="status-option-content my-auto">
+                                    <p class="m-0">Do not disturb</p>
+                                    <p class="describe m-0">Mute chat notifications</p>
+                                </div>
+                                <div></div>
+                            </div>
+                            <div class="status-option d-flex">
+                                <i class="fa-regular fa-circle away-icon align-items-center d-flex mx-3"></i>
+                                <div class="status-option-content my-auto">
+                                    <p class="describe m-0">Set at Away</p>
+                                </div>
+                                <div></div>
+                            </div>
+                            <div class="status-action d-flex align-items-center">
+                                <i class="fa-solid fa-pen pen-icon mx-3"></i>
+                                <div class="status-option-content my-auto">
+                                    <p class="describe m-0">Add a Status</p>
+                                </div>
+                            </div>
+                            <div class="status-option d-flex">
+                                <div class="status-option-content my-auto">
+                                    <p class="describe-action m-0">Chat notification settings</p>
+                                </div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- option -->
+                    <div class="option-content d-flex">
+                        <ul class="d-flex my-auto w-100 ">
+                            <!-- option content -->
+                            <li>
+                                <i class="fa-regular fa-circle-question p-2 mt-1 rounded-circle"></i>
+                                <span class="tooltiptext rounded-3">Support</span>
+                            </li>
+                            <!-- option content -->
+                            <li>
+                                <i class="fa-solid fa-gear p-2 mt-1 rounded-circle"></i>
+                                <span class="tooltiptext rounded-3">Settings</span>
+                            </li>
+                            <!-- option content -->
+                            <li>
+                                <i class="fa-solid fa-list p-2 mt-1 rounded-circle"></i>
+                                <span class="tooltiptext rounded-3">Google apps</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- avartar -->
+                    <div class="avatar d-flex rounded-3 my-auto h-100">
+                        <!-- img -->
+                        <img class="logo-fpt d-flex my-auto" src="./images/logo-fpt.png" alt="logo-fpt"/>
+                        <img class="avatar-user rounded-circle align-items-center my-auto" src="./images/user-img.jpg" alt="avatar"/>
+                        <!-- popover -->
+                        <div class="popover rounded-3 position-absolute start-50" id="avatarPopover">
+                            <div class="name-user">
+                                <div class="user-infomation">
+                                    <div class="top-popover">
+                                        <div class="popover-top m-0">
+                                                <p class="m-0 text-center">thienpnse150137@fpt.edu.vn</p>
+                                                <p class="managed m-0 text-center">Managed by fpt.edu.vn</p>
+                                        </div>
+                                    </div>
+                                    <div class="popover-bottom text-center">
+                                        <img class="avatar-user rounded-circle" src="./images/user-img.jpg" alt="avatar"/>
+                                        <p class="my-1">Hi, Pham Ngoc Thien!</p>
+                                        <button class="my-2">Manage your Google accounts</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="more-account d-flex align-items-center px-2">
+                                <div class="add-account d-flex align-items-center w-50">
+                                    <i class="fa-solid fa-plus"></i>
+                                    <p class="py-2 my-2">add-account</p>
+                                </div>
+                                <div class="sign-out d-flex align-items-center w-50">
+                                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                    <p class="py-2 my-2">sign-out</p>
+                                </div>
+                            </div>
+                            <div class="policy d-flex align-items-center text-center w-100">
+                                <div class="add-account d-flex align-items-center justify-content-end w-50"><p class="m-0 py-auto">Privacy policy</p></div>
+                                .
+                                <div class="sign-out d-flex align-items-center w-50"><p class="m-0 py-auto">Terms of service</p></div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+            <!-- content -->
+            <div class="content d-flex w-100 h-100">
+                <!-- navbar content -->
+                <div class="navbar-content" id="navbar-content">
+                    <button type="button" class="rounded-3 compose-button border-0" data-bs-toggle="modal" data-bs-target="#myModal">
+                        <i class="fa-solid fa-pen"></i> Compose 
+                    </button>
+                    <div class="modal" tabindex="-1" id="myModal" data-bs-backdrop="false">
+                        <div class="modal-dialog position-fixed bottom-0 end-0 modal-compose me-5">
+                            <div class="modal-content">
+                                <div class="modal-header modal-head">
+                                    <p class="modal-title">New Message</p>
+                                    <input type="button" class="btn-close ps-auto" data-bs-dismiss="modal" />
+                                </div>
+                                <div class="modal-body">
+                                    <div class="modal-email-address">
+                                        <input type="text" placeholder="Recipients" class="input-email-address w-100"/>
+                                        <span class="text-placeholder">To</span>
+                                    </div>
+                                    <div class="modal-email-title">
+                                        <input type="text" placeholder="Subject" class="w-100"/>
+                                    </div>
+                                    <div class="modal-email-content">
+                                        <textarea type="text" class="input-compose w-100 border-0"></textarea>
+                                    </div>
+                                </div>
+                                <div class="modal-bottom px-3">
+                                    <div class="option-text d-flex w-100 mb-3">
+                                        <ul class="d-flex w-100 justify-content-between mb-0">
+                                            <li class="rounded-2"><i class="fa-solid fa-left-long"></i></li>
+                                            <li class="rounded-2"><i class="fa-solid fa-right-long"></i></li>
+                                            <li class="rounded-2">samsirrif<i class="fa-solid fa-caret-down down-icon ps-1"></i></li>
+                                            <li class="rounded-2"><i class="fa-solid fa-text-height"></i></li>
+                                            <li class="rounded-2"><i class="fa-solid fa-b"></i></li>
+                                            <li class="rounded-2"><i class="fa-solid fa-italic"></i></li>
+                                            <li class="rounded-2"><i class="fa-solid fa-u"></i></li>
+                                            <li class="rounded-2"><i class="fa-solid fa-a"></i></li>
+                                            <li class="rounded-2"><i class="fa-solid fa-align-left"></i></li>
+                                            <li class="rounded-2"><i class="fa-solid fa-list-ol"></i></li>
+                                            <li class="rounded-2"><i class="fa-solid fa-list-ul"></i></li>
+                                            <li class="rounded-2"><i class="fa-solid fa-outdent"></i></li>
+                                            <li class="rounded-2"><i class="fa-solid fa-right-from-bracket"></i></li>
+                                            <li class="rounded-2"><i class="fa-solid fa-caret-down down-icon"></i></li>
+                                        </ul>
+                                    </div>
+                                    <div class="option-send d-flex w-100">
+                                        <button class="button-send border-0">send</button>
+                                        <button class="button-down p-0"><i class="fa-solid fa-caret-down down-icon"></i></button>
+                                        <ul class="d-flex w-100 justify-content-start">
+                                            <li class="rounded-2"><i class="fa-solid fa-a"></i></li>
+                                            <li class="rounded-2"><i class="fa-solid fa-paperclip"></i></li>
+                                            <li class="rounded-2"><i class="fa-solid fa-link"></i></li>
+                                            <li class="rounded-2"><i class="fa-regular fa-face-smile"></i></li>
+                                            <li class="rounded-2"><i class="fa-brands fa-google-drive"></i></li>
+                                            <li class="rounded-2"><i class="fa-regular fa-image"></i></li>
+                                            <li class="rounded-2"><i class="fa-solid fa-lock"></i></li>
+                                            <li class="rounded-2"><i class="fa-solid fa-pen-clip"></i></li>
+                                            <li class="rounded-2"><i class="fa-regular fa-calendar-xmark"></i></li>
+                                            <li class="rounded-2"><i class="fa-solid fa-ellipsis-vertical vertical-icon rounded-circle"></i></li>
+                                            <li class="icon-trash rounded-2 ms-auto"><i class="fa-solid fa-trash-can "></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                          </div>
+                        </div>
+                      </div>
+                    <ul class="mt-3 navbar-content-option">
+                        <li class="d-flex rounded-pill align-items-center w-auto"><i class="fa-solid fa-inbox"></i> Inbox <strong>194</strong><div class="text-tooltip rounded-3">inbox</div></li>
+                        <li class="d-flex rounded-pill align-items-center w-auto"><i class="fa-regular fa-star"></i>Starred <div class="text-tooltip rounded-3">Starred</div></li>
+                        <li class="d-flex rounded-pill align-items-center w-auto"><i class="fa-regular fa-clock"></i>Snoozed <div class="text-tooltip rounded-3">Snoozed</div></li>
+                        <li class="d-flex rounded-pill align-items-center w-auto"><i class="fa-regular fa-paper-plane"></i>Sent <div class="text-tooltip rounded-3">Sent</div></li>
+                        <li class="d-flex rounded-pill align-items-center w-auto"><i class="fa-regular fa-note-sticky"></i>Drafts <div class="text-tooltip rounded-3">Drafts</div></li>
+                        <li class="d-flex rounded-pill align-items-center w-auto"><i class="fa-solid fa-angle-down"></i></i>More</li>
+                    </ul>
+                    <!-- label -->
+                    <div class="label d-flex justify-content-between">
+                        <p>Labels</p>
+                        <i class="fa-solid fa-plus my-atuo"></i>
+                    </div>
+                </div>
+                
+                <!-- email content -->
+                <div class="email-content h-100">
+                    <div class="email-option d-flex m-0 align-items-center">
+                        <input type="checkbox" class="check-box">
+                        <i class="fa-solid fa-caret-down scrooll-icon">
+                            <div class="text-tooltip rounded-3">Select</div>
+                        </i>
+                        <i class="fa-solid fa-arrow-rotate-right arrow-icon rounded-circle">
+                            <div class="text-tooltip rounded-3">Refresh</div>
+                        </i>
+                        <i class="fa-solid fa-ellipsis-vertical vertical-icon rounded-circle">
+                            <div class="text-tooltip rounded-3">More</div>
+                        </i>
+                        <div class="pagination rounded-3 align-items-center d-flex w-auto"><p class="m-0 py-auto">1-50 of 1.932</p>
+                            <div class="pagination-option text-center">
+                                <p class="newest-text d-flex my-auto align-items-center justify-content-center">Newest</p>
+                                <p class="d-flex my-auto align-items-center justify-content-center">Oldest</p>
+                            </div>
+                        </div>
+                        <button class="rounded-circle border-0">
+                            <i class="fa-solid fa-chevron-left left-icon">
+                                <div class="text-tooltip-pagination rounded-3">Newer</div>
+                            </i>
+                        </button>
+                        <button class="right-icon rounded-circle border-0">
+                            <i class="fa-solid fa-chevron-right right-icon">
+                                <div class="text-tooltip-pagination rounded-3">Older</div>
+                            </i>
+                        </button>
+                    </div>
+                    <ul class="ps-0 m-0">
+                        <li class="d-flex align-items-center py-3">
+                            <input type="checkbox">
+                            <i class="fa-regular fa-star"></i>
+                            <p class="name-email">Shopee</p>
+                            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> 
+                            <strong class="text-end">11 Mar</strong>
+                            <div class="option-email-content d-flex">
+                                <i class="fa-solid fa-file-arrow-down icon-down d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-trash-can icon-trash d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-envelope-open icon-open d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-clock icon-clock d-flex rounded-circle align-items-center justify-content-center"></i>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-center py-3">
+                            <input type="checkbox">
+                            <i class="fa-regular fa-star"></i>
+                            <p class="name-email">Shopee</p>
+                            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> 
+                            <strong class="text-end">11 Mar</strong>
+                            <div class="option-email-content d-flex">
+                                <i class="fa-solid fa-file-arrow-down icon-down d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-trash-can icon-trash d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-envelope-open icon-open d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-clock icon-clock d-flex rounded-circle align-items-center justify-content-center"></i>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-center py-3">
+                            <input type="checkbox">
+                            <i class="fa-regular fa-star"></i>
+                            <p class="name-email">Shopee</p>
+                            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> 
+                            <strong class="text-end">11 Mar</strong>
+                            <div class="option-email-content d-flex">
+                                <i class="fa-solid fa-file-arrow-down icon-down d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-trash-can icon-trash d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-envelope-open icon-open d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-clock icon-clock d-flex rounded-circle align-items-center justify-content-center"></i>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-center py-3">
+                            <input type="checkbox">
+                            <i class="fa-regular fa-star"></i>
+                            <p class="name-email">Shopee</p>
+                            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> 
+                            <strong class="text-end">11 Mar</strong>
+                            <div class="option-email-content d-flex">
+                                <i class="fa-solid fa-file-arrow-down icon-down d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-trash-can icon-trash d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-envelope-open icon-open d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-clock icon-clock d-flex rounded-circle align-items-center justify-content-center"></i>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-center py-3">
+                            <input type="checkbox">
+                            <i class="fa-regular fa-star"></i>
+                            <p class="name-email">Shopee</p>
+                            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> 
+                            <strong class="text-end">11 Mar</strong>
+                            <div class="option-email-content d-flex">
+                                <i class="fa-solid fa-file-arrow-down icon-down d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-trash-can icon-trash d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-envelope-open icon-open d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-clock icon-clock d-flex rounded-circle align-items-center justify-content-center"></i>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-center py-3">
+                            <input type="checkbox">
+                            <i class="fa-regular fa-star"></i>
+                            <p class="name-email">Shopee</p>
+                            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> 
+                            <strong class="text-end">11 Mar</strong>
+                            <div class="option-email-content d-flex">
+                                <i class="fa-solid fa-file-arrow-down icon-down d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-trash-can icon-trash d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-envelope-open icon-open d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-clock icon-clock d-flex rounded-circle align-items-center justify-content-center"></i>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-center py-3">
+                            <input type="checkbox">
+                            <i class="fa-regular fa-star"></i>
+                            <p class="name-email">Shopee</p>
+                            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> 
+                            <strong class="text-end">11 Mar</strong>
+                            <div class="option-email-content d-flex">
+                                <i class="fa-solid fa-file-arrow-down icon-down d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-trash-can icon-trash d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-envelope-open icon-open d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-clock icon-clock d-flex rounded-circle align-items-center justify-content-center"></i>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-center py-3">
+                            <input type="checkbox">
+                            <i class="fa-regular fa-star"></i>
+                            <p class="name-email">Shopee</p>
+                            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> 
+                            <strong class="text-end">11 Mar</strong>
+                            <div class="option-email-content d-flex">
+                                <i class="fa-solid fa-file-arrow-down icon-down d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-trash-can icon-trash d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-envelope-open icon-open d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-clock icon-clock d-flex rounded-circle align-items-center justify-content-center"></i>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-center py-3">
+                            <input type="checkbox">
+                            <i class="fa-regular fa-star"></i>
+                            <p class="name-email">Shopee</p>
+                            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> 
+                            <strong class="text-end">11 Mar</strong>
+                            <div class="option-email-content d-flex">
+                                <i class="fa-solid fa-file-arrow-down icon-down d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-trash-can icon-trash d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-envelope-open icon-open d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-clock icon-clock d-flex rounded-circle align-items-center justify-content-center"></i>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-center py-3">
+                            <input type="checkbox">
+                            <i class="fa-regular fa-star"></i>
+                            <p class="name-email">Shopee</p>
+                            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> 
+                            <strong class="text-end">11 Mar</strong>
+                            <div class="option-email-content d-flex">
+                                <i class="fa-solid fa-file-arrow-down icon-down d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-trash-can icon-trash d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-envelope-open icon-open d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-clock icon-clock d-flex rounded-circle align-items-center justify-content-center"></i>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-center py-3">
+                            <input type="checkbox">
+                            <i class="fa-regular fa-star"></i>
+                            <p class="name-email">Shopee</p>
+                            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> 
+                            <strong class="text-end">11 Mar</strong>
+                            <div class="option-email-content d-flex">
+                                <i class="fa-solid fa-file-arrow-down icon-down d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-trash-can icon-trash d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-envelope-open icon-open d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-clock icon-clock d-flex rounded-circle align-items-center justify-content-center"></i>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-center py-3">
+                            <input type="checkbox">
+                            <i class="fa-regular fa-star"></i>
+                            <p class="name-email">Shopee</p>
+                            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> 
+                            <strong class="text-end">11 Mar</strong>
+                            <div class="option-email-content d-flex">
+                                <i class="fa-solid fa-file-arrow-down icon-down d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-trash-can icon-trash d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-envelope-open icon-open d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-clock icon-clock d-flex rounded-circle align-items-center justify-content-center"></i>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-center py-3">
+                            <input type="checkbox">
+                            <i class="fa-regular fa-star"></i>
+                            <p class="name-email">Shopee</p>
+                            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> 
+                            <strong class="text-end">11 Mar</strong>
+                            <div class="option-email-content d-flex">
+                                <i class="fa-solid fa-file-arrow-down icon-down d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-trash-can icon-trash d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-envelope-open icon-open d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-clock icon-clock d-flex rounded-circle align-items-center justify-content-center"></i>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-center py-3">
+                            <input type="checkbox">
+                            <i class="fa-regular fa-star"></i>
+                            <p class="name-email">Shopee</p>
+                            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> 
+                            <strong class="text-end">11 Mar</strong>
+                            <div class="option-email-content d-flex">
+                                <i class="fa-solid fa-file-arrow-down icon-down d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-trash-can icon-trash d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-envelope-open icon-open d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-clock icon-clock d-flex rounded-circle align-items-center justify-content-center"></i>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-center py-3">
+                            <input type="checkbox">
+                            <i class="fa-regular fa-star"></i>
+                            <p class="name-email">Shopee</p>
+                            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> 
+                            <strong class="text-end">11 Mar</strong>
+                            <div class="option-email-content d-flex">
+                                <i class="fa-solid fa-file-arrow-down icon-down d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-trash-can icon-trash d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-envelope-open icon-open d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-clock icon-clock d-flex rounded-circle align-items-center justify-content-center"></i>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-center py-3">
+                            <input type="checkbox">
+                            <i class="fa-regular fa-star"></i>
+                            <p class="name-email">Shopee</p>
+                            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> 
+                            <strong class="text-end">11 Mar</strong>
+                            <div class="option-email-content d-flex">
+                                <i class="fa-solid fa-file-arrow-down icon-down d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-trash-can icon-trash d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-envelope-open icon-open d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-clock icon-clock d-flex rounded-circle align-items-center justify-content-center"></i>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-center py-3">
+                            <input type="checkbox">
+                            <i class="fa-regular fa-star"></i>
+                            <p class="name-email">Shopee</p>
+                            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> 
+                            <strong class="text-end">11 Mar</strong>
+                            <div class="option-email-content d-flex">
+                                <i class="fa-solid fa-file-arrow-down icon-down d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-trash-can icon-trash d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-envelope-open icon-open d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-clock icon-clock d-flex rounded-circle align-items-center justify-content-center"></i>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-center py-3">
+                            <input type="checkbox">
+                            <i class="fa-regular fa-star"></i>
+                            <p class="name-email">Shopee</p>
+                            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> 
+                            <strong class="text-end">11 Mar</strong>
+                            <div class="option-email-content d-flex">
+                                <i class="fa-solid fa-file-arrow-down icon-down d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-trash-can icon-trash d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-envelope-open icon-open d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-clock icon-clock d-flex rounded-circle align-items-center justify-content-center"></i>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-center py-3">
+                            <input type="checkbox">
+                            <i class="fa-regular fa-star"></i>
+                            <p class="name-email">Shopee</p>
+                            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> 
+                            <strong class="text-end">11 Mar</strong>
+                            <div class="option-email-content d-flex">
+                                <i class="fa-solid fa-file-arrow-down icon-down d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-trash-can icon-trash d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-envelope-open icon-open d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-clock icon-clock d-flex rounded-circle align-items-center justify-content-center"></i>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-center py-3">
+                            <input type="checkbox">
+                            <i class="fa-regular fa-star"></i>
+                            <p class="name-email">Shopee</p>
+                            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> 
+                            <strong class="text-end">11 Mar</strong>
+                            <div class="option-email-content d-flex">
+                                <i class="fa-solid fa-file-arrow-down icon-down d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-trash-can icon-trash d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-envelope-open icon-open d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-clock icon-clock d-flex rounded-circle align-items-center justify-content-center"></i>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-center py-3">
+                            <input type="checkbox">
+                            <i class="fa-regular fa-star"></i>
+                            <p class="name-email">Shopee</p>
+                            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> 
+                            <strong class="text-end">11 Mar</strong>
+                            <div class="option-email-content d-flex">
+                                <i class="fa-solid fa-file-arrow-down icon-down d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-trash-can icon-trash d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-envelope-open icon-open d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-clock icon-clock d-flex rounded-circle align-items-center justify-content-center"></i>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-center py-3">
+                            <input type="checkbox">
+                            <i class="fa-regular fa-star"></i>
+                            <p class="name-email">Shopee</p>
+                            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> 
+                            <strong class="text-end">11 Mar</strong>
+                            <div class="option-email-content d-flex">
+                                <i class="fa-solid fa-file-arrow-down icon-down d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-trash-can icon-trash d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-envelope-open icon-open d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-clock icon-clock d-flex rounded-circle align-items-center justify-content-center"></i>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-center py-3">
+                            <input type="checkbox">
+                            <i class="fa-regular fa-star"></i>
+                            <p class="name-email">Shopee</p>
+                            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> 
+                            <strong class="text-end">11 Mar</strong>
+                            <div class="option-email-content d-flex">
+                                <i class="fa-solid fa-file-arrow-down icon-down d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-trash-can icon-trash d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-envelope-open icon-open d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-clock icon-clock d-flex rounded-circle align-items-center justify-content-center"></i>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-center py-3">
+                            <input type="checkbox">
+                            <i class="fa-regular fa-star"></i>
+                            <p class="name-email">Shopee</p>
+                            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> 
+                            <strong class="text-end">11 Mar</strong>
+                            <div class="option-email-content d-flex">
+                                <i class="fa-solid fa-file-arrow-down icon-down d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-trash-can icon-trash d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-envelope-open icon-open d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-clock icon-clock d-flex rounded-circle align-items-center justify-content-center"></i>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-center py-3">
+                            <input type="checkbox">
+                            <i class="fa-regular fa-star"></i>
+                            <p class="name-email">Shopee</p>
+                            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> 
+                            <strong class="text-end">11 Mar</strong>
+                            <div class="option-email-content d-flex">
+                                <i class="fa-solid fa-file-arrow-down icon-down d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-trash-can icon-trash d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-envelope-open icon-open d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-clock icon-clock d-flex rounded-circle align-items-center justify-content-center"></i>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-center py-3">
+                            <input type="checkbox">
+                            <i class="fa-regular fa-star"></i>
+                            <p class="name-email">Shopee</p>
+                            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> 
+                            <strong class="text-end">11 Mar</strong>
+                            <div class="option-email-content d-flex">
+                                <i class="fa-solid fa-file-arrow-down icon-down d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-trash-can icon-trash d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-envelope-open icon-open d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-clock icon-clock d-flex rounded-circle align-items-center justify-content-center"></i>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-center py-3">
+                            <input type="checkbox">
+                            <i class="fa-regular fa-star"></i>
+                            <p class="name-email">Shopee</p>
+                            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> 
+                            <strong class="text-end">11 Mar</strong>
+                            <div class="option-email-content d-flex">
+                                <i class="fa-solid fa-file-arrow-down icon-down d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-trash-can icon-trash d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-envelope-open icon-open d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-clock icon-clock d-flex rounded-circle align-items-center justify-content-center"></i>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-center py-3">
+                            <input type="checkbox">
+                            <i class="fa-regular fa-star"></i>
+                            <p class="name-email">Shopee</p>
+                            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> 
+                            <strong class="text-end">11 Mar</strong>
+                            <div class="option-email-content d-flex">
+                                <i class="fa-solid fa-file-arrow-down icon-down d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-trash-can icon-trash d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-envelope-open icon-open d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-clock icon-clock d-flex rounded-circle align-items-center justify-content-center"></i>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-center py-3">
+                            <input type="checkbox">
+                            <i class="fa-regular fa-star"></i>
+                            <p class="name-email">Shopee</p>
+                            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> 
+                            <strong class="text-end">11 Mar</strong>
+                            <div class="option-email-content d-flex">
+                                <i class="fa-solid fa-file-arrow-down icon-down d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-trash-can icon-trash d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-envelope-open icon-open d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-clock icon-clock d-flex rounded-circle align-items-center justify-content-center"></i>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-center py-3">
+                            <input type="checkbox">
+                            <i class="fa-regular fa-star"></i>
+                            <p class="name-email">Shopee</p>
+                            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> 
+                            <strong class="text-end">11 Mar</strong>
+                            <div class="option-email-content d-flex">
+                                <i class="fa-solid fa-file-arrow-down icon-down d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-trash-can icon-trash d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-envelope-open icon-open d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-clock icon-clock d-flex rounded-circle align-items-center justify-content-center"></i>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-center py-3">
+                            <input type="checkbox">
+                            <i class="fa-regular fa-star"></i>
+                            <p class="name-email">Shopee</p>
+                            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> 
+                            <strong class="text-end">11 Mar</strong>
+                            <div class="option-email-content d-flex">
+                                <i class="fa-solid fa-file-arrow-down icon-down d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-trash-can icon-trash d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-envelope-open icon-open d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-clock icon-clock d-flex rounded-circle align-items-center justify-content-center"></i>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-center py-3">
+                            <input type="checkbox">
+                            <i class="fa-regular fa-star"></i>
+                            <p class="name-email">Shopee</p>
+                            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> 
+                            <strong class="text-end">11 Mar</strong>
+                            <div class="option-email-content d-flex">
+                                <i class="fa-solid fa-file-arrow-down icon-down d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-trash-can icon-trash d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-envelope-open icon-open d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-clock icon-clock d-flex rounded-circle align-items-center justify-content-center"></i>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-center py-3">
+                            <input type="checkbox">
+                            <i class="fa-regular fa-star"></i>
+                            <p class="name-email">Shopee</p>
+                            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> 
+                            <strong class="text-end">11 Mar</strong>
+                            <div class="option-email-content d-flex">
+                                <i class="fa-solid fa-file-arrow-down icon-down d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-trash-can icon-trash d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-envelope-open icon-open d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-clock icon-clock d-flex rounded-circle align-items-center justify-content-center"></i>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-center py-3">
+                            <input type="checkbox">
+                            <i class="fa-regular fa-star"></i>
+                            <p class="name-email">Shopee</p>
+                            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> 
+                            <strong class="text-end">11 Mar</strong>
+                            <div class="option-email-content d-flex">
+                                <i class="fa-solid fa-file-arrow-down icon-down d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-trash-can icon-trash d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-envelope-open icon-open d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-clock icon-clock d-flex rounded-circle align-items-center justify-content-center"></i>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-center py-3">
+                            <input type="checkbox">
+                            <i class="fa-regular fa-star"></i>
+                            <p class="name-email">Shopee</p>
+                            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> 
+                            <strong class="text-end">11 Mar</strong>
+                            <div class="option-email-content d-flex">
+                                <i class="fa-solid fa-file-arrow-down icon-down d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-trash-can icon-trash d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-envelope-open icon-open d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-clock icon-clock d-flex rounded-circle align-items-center justify-content-center"></i>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-center py-3">
+                            <input type="checkbox">
+                            <i class="fa-regular fa-star"></i>
+                            <p class="name-email">Shopee</p>
+                            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> 
+                            <strong class="text-end">11 Mar</strong>
+                            <div class="option-email-content d-flex">
+                                <i class="fa-solid fa-file-arrow-down icon-down d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-trash-can icon-trash d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-envelope-open icon-open d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-clock icon-clock d-flex rounded-circle align-items-center justify-content-center"></i>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-center py-3">
+                            <input type="checkbox">
+                            <i class="fa-regular fa-star"></i>
+                            <p class="name-email">Shopee</p>
+                            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> 
+                            <strong class="text-end">11 Mar</strong>
+                            <div class="option-email-content d-flex">
+                                <i class="fa-solid fa-file-arrow-down icon-down d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-trash-can icon-trash d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-envelope-open icon-open d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-clock icon-clock d-flex rounded-circle align-items-center justify-content-center"></i>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-center py-3">
+                            <input type="checkbox">
+                            <i class="fa-regular fa-star"></i>
+                            <p class="name-email">Shopee</p>
+                            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> 
+                            <strong class="text-end">11 Mar</strong>
+                            <div class="option-email-content d-flex">
+                                <i class="fa-solid fa-file-arrow-down icon-down d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-trash-can icon-trash d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-envelope-open icon-open d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-clock icon-clock d-flex rounded-circle align-items-center justify-content-center"></i>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-center py-3">
+                            <input type="checkbox">
+                            <i class="fa-regular fa-star"></i>
+                            <p class="name-email">Shopee</p>
+                            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> 
+                            <strong class="text-end">11 Mar</strong>
+                            <div class="option-email-content d-flex">
+                                <i class="fa-solid fa-file-arrow-down icon-down d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-trash-can icon-trash d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-envelope-open icon-open d-flex rounded-circle align-items-center justify-content-center"></i>
+                                <i class="fa-regular fa-clock icon-clock d-flex rounded-circle align-items-center justify-content-center"></i>
+                            </div>
+                        </li>
+                        
+                        <div class="email-footer d-flex justify-content-between ps-auto ">
+                            <p class="using-memory">Using 0.5GB</p> 
+                            <div>
+                                <p>Programme Policies</p>
+                                <p>Powered by Google</p>
+                            </div> 
+                            <div>
+                                <p class="details text-end">Last account activity: 13 hours ago</p>
+                                <p class="details text-end">Details</p>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="./js/index.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+    <footer>
+    </footer>
+</html>
