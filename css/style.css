@@ -5,30 +5,20 @@ html {
 body {
   background-color: #F6F8FC;
   font-family: Google Sans, Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
-  overflow: hidden;
 }
 body .navbar {
   width: 5%;
   min-width: 4.25rem;
   background-color: #E9F1FB;
-}
-body .navbar .option {
-  list-style: none;
+  line-height: 1rem;
 }
 body .navbar .option li {
   flex-direction: column;
   margin: 1.25rem auto 0rem auto;
 }
-body .navbar .option li .hamberger-button {
-  font-size: 1.375rem;
-}
-body .navbar .option li i {
-  font-size: 1rem;
-}
 body .navbar .option li p {
   color: #1f1f1f;
   font-weight: 500;
-  font-size: 0.75rem;
   margin: 0.375rem 0rem 0.375rem 0rem;
 }
 body .navbar .option .first-option i {
@@ -43,7 +33,6 @@ body .navbar .option .first-option i .noti {
   position: absolute;
   bottom: 1rem;
   left: 1.375rem;
-  font-size: 0.688rem;
   color: #fff;
   padding: 0.063rem 0.25rem;
   font-family: Google Sans;
@@ -52,7 +41,6 @@ body .navbar .option .first-option i .noti {
 body .navbar .option .first-option p {
   color: #1f1f1f;
   font-weight: 500;
-  font-size: 0.75rem;
 }
 body .navbar .option .option-content i {
   width: 2.75rem;
@@ -65,10 +53,6 @@ body .navbar .option .option-content i:hover {
 body .navbar .option .option-content p {
   color: #1f1f1f;
   font-weight: 500;
-  font-size: 0.75rem;
-}
-body .navbar .option i {
-  font-size: 1rem;
 }
 body .right-content {
   width: 95%;
@@ -106,9 +90,6 @@ body .right-content .search-bar .search-box input:focus {
 body .right-content .search-bar .search-box input:focus + .table-search {
   display: block;
 }
-body .right-content .search-bar .search-box input ::placeholder {
-  font-size: 1rem;
-}
 body .right-content .search-bar .search-box .table-search {
   background-color: #fff;
   position: absolute;
@@ -126,14 +107,11 @@ body .right-content .search-bar .search-box .table-search .top-content {
 body .right-content .search-bar .search-box .table-search .top-content button {
   border: #e1e5e9 solid 1px;
   background-color: #fff;
-  font-size: 0.813rem;
 }
 body .right-content .search-bar .search-box .table-search .top-content button:hover {
   background-color: #e7eaee;
 }
 body .right-content .search-bar .search-box .table-search .bottom-content ul li {
-  list-style: none;
-  font-size: 0.875rem;
   border-left: white solid 2px;
 }
 body .right-content .search-bar .search-box .table-search .bottom-content ul li:hover {
@@ -167,10 +145,6 @@ body .right-content .search-bar .option .status-active button:hover {
 }
 body .right-content .search-bar .option .status-active button i:first-child {
   color: green;
-  font-size: 0.75rem;
-}
-body .right-content .search-bar .option .status-active button i {
-  font-size: 0.625rem;
 }
 body .right-content .search-bar .option .status-active .status-content {
   position: absolute;
@@ -182,7 +156,6 @@ body .right-content .search-bar .option .status-active .status-content {
   box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
 }
 body .right-content .search-bar .option .status-active .status-content p :first-child {
-  font-size: 1rem;
   color: black;
 }
 body .right-content .search-bar .option .status-active .status-content .status-option {
@@ -191,9 +164,6 @@ body .right-content .search-bar .option .status-active .status-content .status-o
 body .right-content .search-bar .option .status-active .status-content .status-option:hover {
   background-color: #E8EAED;
   border-bottom: #444746;
-}
-body .right-content .search-bar .option .status-active .status-content .status-option i {
-  font-size: 0.875rem;
 }
 body .right-content .search-bar .option .status-active .status-content .status-option .circle-icon {
   color: green;
@@ -210,7 +180,6 @@ body .right-content .search-bar .option .status-active .status-content .status-a
   background-color: #E8EAED;
 }
 body .right-content .search-bar .option .status-active .status-content .describe {
-  font-size: 0.75rem;
   color: #AEB0AF;
 }
 body .right-content .search-bar .option .option-content {
@@ -225,7 +194,6 @@ body .right-content .search-bar .option .option-content ul li {
   width: 2.5rem;
   height: 2.5rem;
   margin: 0rem 0.313rem 0rem 0.313rem;
-  font-size: 1.25rem;
   color: gray;
   position: relative;
 }
@@ -244,8 +212,6 @@ body .right-content .search-bar .option .option-content ul li .tooltiptext {
   z-index: 1;
   top: 120%;
   left: -20%;
-  font-size: 0.875rem;
-  white-space: nowrap;
 }
 body .right-content .search-bar .option .option-content ul li:hover .tooltiptext {
   visibility: visible;
@@ -273,19 +239,12 @@ body .right-content .search-bar .option .avatar .popover {
 body .right-content .search-bar .option .avatar .popover .name-user .user-infomation .popover-top {
   padding-top: 1.2rem;
 }
-body .right-content .search-bar .option .avatar .popover .name-user .user-infomation .popover-top p {
-  font-size: 0.875rem;
-}
-body .right-content .search-bar .option .avatar .popover .name-user .user-infomation .popover-top .managed {
-  font-size: 0.75rem;
-}
 body .right-content .search-bar .option .avatar .popover .name-user .user-infomation .popover-bottom button {
   background-color: #dde0e6;
   padding: 0.563rem 1.438rem;
   border-radius: 6.25rem;
   border: 1px solid #747775;
   color: #0b57d0;
-  font-size: 0.875rem;
 }
 body .right-content .search-bar .option .avatar .popover .name-user .user-infomation .popover-bottom button :hover {
   background-color: #e1e9f7;
@@ -303,7 +262,6 @@ body .right-content .search-bar .option .avatar .popover .more-account .add-acco
   border-radius: 6.25rem 0 0 6.25rem;
 }
 body .right-content .search-bar .option .avatar .popover .more-account .add-account i {
-  font-size: 1rem;
   padding: 0.313rem;
 }
 body .right-content .search-bar .option .avatar .popover .more-account .add-account p {
@@ -324,7 +282,6 @@ body .right-content .search-bar .option .avatar .popover .more-account .sign-out
   border-radius: 0 6.25rem 6.25rem 0;
 }
 body .right-content .search-bar .option .avatar .popover .more-account .sign-out i {
-  font-size: 1rem;
   padding: 0.313rem;
 }
 body .right-content .search-bar .option .avatar .popover .more-account .sign-out p {
@@ -362,7 +319,6 @@ body .right-content .content .navbar-content .compose-button {
   font-weight: 500;
 }
 body .right-content .content .navbar-content .compose-button i {
-  font-size: 1rem;
   margin-right: 0.75rem;
 }
 body .right-content .content .navbar-content .modal .modal-compose {
@@ -370,9 +326,6 @@ body .right-content .content .navbar-content .modal .modal-compose {
 }
 body .right-content .content .navbar-content .modal .modal-compose .modal-head {
   height: 1.25rem;
-}
-body .right-content .content .navbar-content .modal .modal-compose .modal-head p {
-  font-size: 0.875rem;
 }
 body .right-content .content .navbar-content .modal .modal-compose .modal-body {
   padding: 0 1rem;
@@ -418,7 +371,6 @@ body .right-content .content .navbar-content .modal .modal-compose .modal-bottom
   box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
 }
 body .right-content .content .navbar-content .modal .modal-compose .modal-bottom .option-text ul {
-  list-style: none;
   padding-left: 0;
 }
 body .right-content .content .navbar-content .modal .modal-compose .modal-bottom .option-text ul li {
@@ -476,14 +428,12 @@ body .right-content .content .navbar-content .navbar-content-option li i {
 }
 body .right-content .content .navbar-content .navbar-content-option li strong {
   margin: 0rem 0.75rem 0rem auto;
-  font-size: 0.75rem;
 }
 body .right-content .content .navbar-content .navbar-content-option li .text-tooltip {
   position: absolute;
   left: 100%;
   background-color: #444746;
   padding: 4px;
-  font-size: 0.75rem;
   color: #fff;
   visibility: hidden;
 }
@@ -532,7 +482,6 @@ body .right-content .content .email-content .email-option button i .text-tooltip
   font-family: Google Sans, Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
   position: absolute;
   background-color: #444746;
-  font-size: 0.875rem;
   padding: 0.313rem 0.5rem;
   color: #fff;
   top: 19%;
@@ -543,7 +492,6 @@ body .right-content .content .email-content .email-option .scrooll-icon {
   padding: 0.625rem 4px;
   margin-right: 0.875rem;
   position: relative;
-  font-size: 0.625rem;
   margin-right: 1.875rem;
 }
 body .right-content .content .email-content .email-option .scrooll-icon:hover {
@@ -557,7 +505,6 @@ body .right-content .content .email-content .email-option .arrow-icon {
   padding: 0.5rem;
   margin-right: 0.875rem;
   position: relative;
-  font-size: 0.875rem;
   color: #444746;
   margin-right: 1.875rem;
 }
@@ -581,7 +528,6 @@ body .right-content .content .email-content .email-option .pagination {
   padding: 2px 1rem;
   position: relative;
   margin: 0rem 0.313rem 0rem auto;
-  font-size: 0.75rem;
   color: #5e5e5e;
 }
 body .right-content .content .email-content .email-option .pagination:hover {
@@ -617,7 +563,6 @@ body .right-content .content .email-content .email-option .text-tooltip {
   right: 0%;
   top: 100%;
   background-color: #444746;
-  font-size: 0.875rem;
   padding: 0.313rem 0.5rem;
   color: #fff;
   visibility: hidden;
@@ -639,7 +584,6 @@ body .right-content .content .email-content ul li {
   border-top: transparent solid 2px;
   border-left: transparent solid 2px;
   border-right: transparent solid 2px;
-  overflow: hidden;
 }
 body .right-content .content .email-content ul li:hover {
   border: #DADCE0 solid 2px;
@@ -664,7 +608,6 @@ body .right-content .content .email-content ul li p {
 }
 body .right-content .content .email-content ul li strong {
   margin: 0rem 0.625rem 0rem 1.875rem;
-  font-size: 0.75rem;
   width: 4.5rem;
 }
 body .right-content .content .email-content ul li .name-email {
@@ -673,9 +616,6 @@ body .right-content .content .email-content ul li .name-email {
 }
 body .right-content .content .email-content ul li span {
   width: 70%;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
 }
 body .right-content .content .email-content ul li .option-email-content i {
   width: 2rem;
@@ -690,7 +630,6 @@ body .right-content .content .email-content ul li .option-email-content i:hover 
 body .right-content .content .email-content ul .email-footer {
   height: 2.5rem;
   padding: 1rem 0rem 1rem 0rem;
-  font-size: 0.75rem;
   color: #5f6368;
   border-radius: 0rem 0rem 1.25 1.25rem;
 }
