@@ -15,141 +15,75 @@ $inputBackgroundColor: #EAF1FB;
 $liHoverColor: #F2F6FC;
 $greyColor: #AEB0AF;
 
-
 html {
     height: 100%;
 }
 body {
     background-color: $backgroundColor;
     font-family: Google Sans, Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
-    // overflow: hidden;
-    // font-size: 1rem;
     .navbar {
     width: 5%;
     min-width: 4.25rem;
     background-color: $navbarBackgroundColor;
-    line-height: 1rem;
     .option {
-        // list-style: none;
-        input {
-    
-        }
         li {
-            flex-direction: column;
             margin: 1.25rem auto 0rem auto;
-    
-            .hamberger-button {
-                // font-size: 1rem;
-            }
-            i {
-                // font-size: 1rem;
-        
-            }
             p {
-        
-                color: $textColor;
-                font-weight: 500;
-        
-                // font-size: 1rem;
-                margin: 0.375rem 0rem 0.375rem 0rem;
+                color: $textColor;  
+                margin: 0.375rem 0rem;
             } 
         }
         .first-option {
             i {
                 margin-top: 1.125rem;
                 background-color: $iconBackgroundColor;
-        
                 width: 2.75rem;
                 height: 1.875rem;
-        
-        
-        
-                position: relative;
                 .noti {
-                    background-color: $notiColor;
-                    position: absolute;
+                    background-color: $notiColor;            
                     bottom: 1rem;
-                    left: 1.375rem;
-                    // font-size: 1rem;
+                    left: 1.375rem;   
                     color: $whiteColor;
                     padding: 0.063rem 0.25rem;
                     font-family: Google Sans;
                     border : 0.125rem solid $notiColor;
-            
                 }
             }
             p {
-        
-                color: $textColor;
-                font-weight: 500;
-        
-                // font-size: 1rem;
-        
+                color: $textColor;        
             }
         }
         .option-content {
             i {
-        
                 width: 2.75rem;
                 height: 1.875rem;
-        
-        
-        
-                position: relative;
                 &:hover {
                     background-color: $iconHoverColor;
                 }
             }
             p {
-        
-                color: $textColor;
-                font-weight: 500;
-        
-                // font-size: 1rem;
-        
+                color: $textColor;        
             }
-        }
-        i {
-            // font-size: 1rem;
-    
-        }
-       
+        }       
     }
 }
 .right-content {
     width: 95%;
     height: 37.5rem;
     .search-bar {
-
         height: 3rem;
-
-
         .logo {
             width: 20%;
             min-width: 16rem;
-    
             img {
                 width: 6.813rem;
                 height: 2.5rem;
-        
             }
         }
         .search-box {
             width: 40%;
-    
-    
-    
-            position: relative;
-    
-            i {
-                position: absolute;
-        
-            }
             input {
-        
-        
                 padding: 0 1.25rem 0 2.813rem;
-        
                 border-radius: 1.25rem;
                 background-color: $inputBackgroundColor;
                 &:focus {
@@ -161,46 +95,27 @@ body {
                 &:focus +.table-search {
                     display: block;
                 }
-                ::placeholder {
-                    // font-size: 1rem;
-                }
             }
             .table-search {
                 background-color:  $whiteColor;
-                position: absolute;
-        
-                top: 100%;
                 display: none;
                 box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
                 border-radius: 0 0 1.25rem 1.25rem;
-                z-index: 1;
                 .top-content {
                     height: 2.875rem;
-            
-            
-            
                     border-top: $borderColor solid 1px;
                     border-bottom: $borderColor solid 1px;
                     button {
-                
-                
-                
                         border: $borderColor solid 1px;
                         background-color:  $whiteColor;
-                        // font-size: 1rem;
                         &:hover {
                             background-color: #e7eaee;
                         }
                     }
                 }
                 .bottom-content {
-                    ul {
-                
+                    ul { 
                         li {
-                            // list-style: none;
-                    
-                            // font-size: 1rem;
-                    
                             border-left: white solid 2px;
                             &:hover {
                                 background-color: $liHoverColor;
@@ -212,28 +127,16 @@ body {
                             }
                         }
                     }
-                    p {
-                
-                
-                    }
                 }
             }
         }
         .option {
             width: 40%;
-    
-    
-    
             .status-active {
                 width: 30%;
-        
                 min-width: 5.125rem;
                 margin: auto 0rem auto 0.313rem;
-        
-        
-                position: relative;
                 #toggleStatus {
-            
                     &:checked ~ .status-content {
                         display: block;
                     }
@@ -242,112 +145,60 @@ body {
                     }
                 }
                 button {
-            
-            
-            
                     background-color: #E4ECF8;
-            
                     &:hover {
                         background-color: $inputBackgroundColor;
                     }
                     i:first-child {
                         color: green;
-                        // font-size: 1rem;
-                
-                    }
-                    i {
-                        // font-size: 1rem;
                     }
                 } 
                 .status-content {
-                    position: absolute;
                     top: 130%;
-                    left: 50%;
                     width: 150%;
                     background-color:  $whiteColor;
-                    z-index: 1;
                     box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
-            
-            
                     p {
-                
                         :first-child {
-                            // font-size: 1rem;
                             color: black;
                         }
                     }
                     .status-option {
-                
                         height: 3.125rem;
-                
                         &:hover {
                             background-color: $hoverColor;
                             border-bottom: $iconColor;
                         }
-                        i {
-                    
-                    
-                            // font-size: 1rem;
-                        }
                         .circle-icon {
                             color: green;
-                    
                         }
                         .ban-icon {
                             color: red;
-                    
-                        }
-                        .away-icon {
-                    
-                        }
-                        .check-icon {
-                    
-                        }
-                        .status-option-content {
-                    
                         }
                     }
                     .status-action {
-                
                         height: 2.5rem;
-                
-                
                         border-top: $borderColor solid 1px;
                         border-bottom: $borderColor solid 1px;
-                        .pen-icon {
-                    
-                        }
                         &:hover {
                             background-color: $hoverColor;
                         }
                     }
                     .describe {
-                        // font-size: 1rem;
                         color: $greyColor;
                     }
                 }  
-                
             }
             .option-content {
                 width: 10rem;
-        
                 ul {
-            
-                    list-style: none;
                     padding: 0rem 0.313rem;
-            
-            
                     li {
-                        list-style: none;
                         width: 2.5rem;
                         height: 2.5rem;
                         margin: 0rem 0.313rem 0rem 0.313rem;
-                        // font-size: 1rem;
                         color: gray;
-                        position: relative;
                         i {
-                    
-                    
                             &:hover {
                                 background-color: $hoverColor;
                                 .tooltiptext {
@@ -357,16 +208,11 @@ body {
                         }
                         .tooltiptext {
                             visibility: hidden;
-                            position: absolute;
                             background-color: $iconColor;
                             color:  $whiteColor;    
                             padding: 0.125rem 0.625rem;
-                    
-                            z-index: 1;
                             top: 120%;
                             left: -20%;
-                            // font-size: 1rem;
-                            // white-space: nowrap;
                         }
                         &:hover {
                             .tooltiptext {
@@ -377,64 +223,32 @@ body {
                 }
             }
             .avatar {
-        
                 width: 8.375rem;
-        
                 border: rgb(230, 222, 222) solid 1px;
-        
-        
-        
                 .logo-fpt {
-            
                     width: 5.625rem;
                     height: 2rem;
-            
                 }
                 .avatar-user {
-            
                     width: 2rem;
                     height: 2rem;
-            
-            
-            
                 }
                 .popover {
-            
-                    left: 0%;
                     min-width: 21.875rem;
                     top: 130%;
-                    z-index: 1;
-                    background-color: $popoverColor;
-            
-            
-            
-                    z-index: 2;
+                    background-color: $popoverColor;            
                     .name-user {
                         .user-infomation {
                             .popover-top {
                                 padding-top: 1.2rem;
-                                p {
-                            
-                                    // font-size: 1rem;
-                            
-                                }
-                                .managed {
-                                    // font-size: 1rem;
-                                }
                             }
                             .popover-bottom {
-                        
-                                p {
-                            
-                                }
                                 button {
-                            
                                     background-color: $popoverColor;
                                     padding: 0.563rem 1.438rem;
                                     border-radius: 6.25rem;
                                     border: 1px solid #747775;
                                     color: #0b57d0;
-                                    // font-size: 1rem;
                                     :hover {
                                         background-color: #e1e9f7;
                                     }
@@ -448,22 +262,14 @@ body {
                         }
                     }
                     .more-account {
-                
                         .add-account {
-                    
                             height: 3.625rem;
                             padding: 0 0.938rem;
                             margin: 0 1px;
                             background-color:  $whiteColor;
-                    
-                    
                             border-radius: 6.25rem 0 0 6.25rem;
                             i {
-                                // font-size: 1rem;
                                 padding: 0.313rem; 
-                            }
-                            p {
-                                margin-left: 0.5rem;
                             }
                             &:hover {
                                 background-color: $hoverAccountColor;
@@ -474,20 +280,13 @@ body {
                             }
                         }
                         .sign-out {
-                    
                             height: 3.625rem;
                             padding: 0 0.938rem;
                             margin: 0 1px;
                             background-color:  $whiteColor;
-                    
-                    
                             border-radius: 0 6.25rem 6.25rem 0;
                             i {
-                                // font-size: 1rem;
                                 padding: 0.313rem; 
-                            }
-                            p {
-                                margin-left: 0.5rem;
                             }
                             &:hover {
                                 background-color: $hoverAccountColor;
@@ -495,27 +294,15 @@ body {
                         }
                     }
                     .policy {
-                
-                
-                
-                
                         .add-account {
-                    
                             height: 3.625rem;
                             padding: 0 0.938rem;
                             margin: 0 1px;
-                    
-                    
-                    
-
                         }
                         .sign-out {
-                    
                             height: 3.625rem;
                             padding: 0 0.938rem;
                             margin: 0 1px;
-                    
-                    
                         }
                         p {
                             &:hover {
@@ -528,24 +315,15 @@ body {
         }
     }
     .content {
-
-
-        height: auto;
-
         .navbar-content {
             width: 20%;
             min-width: 16rem;
-            height: auto;
             .compose-button {
                 height: 3.5rem;
                 width: 8.625rem;
                 background-color: #C1E7FF;
-        
                 margin: 0.625rem 0rem 0rem 0.625rem;
-        
-                font-weight: 500;
                 i {
-                    // font-size: 1rem;
                     margin-right: 0.75rem;
                 }
             }
@@ -554,25 +332,18 @@ body {
                     min-width: 28.75rem;
                     .modal-head {
                         height: 1.25rem;
-                        p {
-                            // font-size: 1rem;
-                        }
                     }
                     .modal-body {
                         padding: 0 1rem;
                         .modal-email-address {
-                            position: relative;
                             .text-placeholder {
-                                position: absolute;
                                 top: 13%;
-                                left: 0%;
                                 display: none;
                             }
                             .input-email-address {
                                 border: none;
                                 height: 2.25rem;
                                 border-bottom: 1px solid black;
-
                                 &:focus {
                                     outline: none;
                                     padding-left: 1.563rem;
@@ -596,7 +367,6 @@ body {
                             .input-compose {
                                 height: 13.688rem;
                                 resize: none;
-                        
                                 &:focus {
                                     outline: none;
                                 }
@@ -608,8 +378,6 @@ body {
                             height: 2.25rem;
                             box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
                             ul {
-                                // list-style: none;
-                                padding-left: 0;
                                 li {
                                     width: auto;
                                     padding: 4px 6px;
@@ -626,7 +394,6 @@ body {
                                 background-color: #0b57d0;
                                 border-radius: 6.25rem 0 0 6.25rem;
                                 color: $whiteColor;
-                        
                             }
                             .button-down {
                                 border: none;
@@ -640,19 +407,11 @@ body {
                                 }
                             }
                             ul {
-                                list-style: none;
-                                padding-left: 0;
                                 li {
-                                    width: auto;
                                     padding: 4px 6px;
                                     &:hover {
                                         background-color: $hoverColor;
                                     }
-                                    
-                                }
-                                .icon-trash {
-                            
-                            
                                 }
                             }
                         }
@@ -660,15 +419,9 @@ body {
                 }
             }
             .navbar-content-option {
-                list-style: none;
                 padding: 0rem 0.5rem 0rem 0.625rem;
                 li {
-            
                     height: 2rem;
-            
-            
-            
-                    position: relative;
                     &:hover {
                         background-color: $iconHoverColor;
                         .text-tooltip {
@@ -680,15 +433,11 @@ body {
                     }
                     strong {
                         margin: 0rem 0.75rem 0rem auto;
-                        // font-size: 1rem;
+                        
                     }
                     .text-tooltip {
-                        position: absolute;
-                        left: 100%;
                         background-color: $iconColor;
                         padding: 4px;
-                
-                        // font-size: 1rem;
                         color:  $whiteColor;
                         visibility: hidden;
                     }
@@ -697,28 +446,15 @@ body {
                     background-color: $iconBackgroundColor;
                 }
             }
-            
-            
             .label {
-        
-        
                 padding: 0rem 0.625rem 0rem 1.625rem;
-                i {
-            
-            
-                }
             }
         }
         .email-content {
-            flex-grow: 1;
             width: 80%;
-            padding-left: 0.5rem;
             .email-option {
-        
                 height: 3rem;
                 padding: 0.625rem 2.5rem 0.625rem 1.125rem;
-        
-        
                 border-radius: 1.25rem 1.25rem 0rem 0rem;
                 background-color:  $whiteColor;
                 input {
@@ -727,10 +463,6 @@ body {
                     margin: 0rem 2px 0rem 0.625rem;
                 }
                 button {
-            
-            
-            
-            
                     background-color:  $whiteColor;
                     color: $greyColor;
                     :last-child {
@@ -759,13 +491,10 @@ body {
                     i {
                         .text-tooltip-pagination {
                             font-family: Google Sans, Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
-                            position: absolute;
                             background-color: $iconColor;
-                            // font-size: 1rem;
                             padding: 0.313rem 0.5rem;
                             color:  $whiteColor;
-                    
-                            top: 19%;
+                            top: 12%;
                             right: 3%;
                             visibility: hidden;
                         }
@@ -775,8 +504,6 @@ body {
                 .scrooll-icon {
                     padding: 0.625rem 4px;
                     margin-right: 0.875rem;
-                    position: relative;
-                    // font-size: 1rem;
                     margin-right: 1.875rem;
                     &:hover {
                         background-color: $iconHoverColor;
@@ -787,11 +514,7 @@ body {
                     }
                 }
                 .arrow-icon {
-            
-                    padding: 0.5rem;
                     margin-right: 0.875rem;
-                    position: relative;
-                    // font-size: 1rem;
                     color: $iconColor;
                     margin-right: 1.875rem;
                     &:hover {
@@ -802,9 +525,7 @@ body {
                     }
                 }
                 .vertical-icon {
-            
                     padding: 0.5rem 0.875rem;
-                    position: relative;
                     &:hover {
                         background-color: $iconHoverColor;
                         .text-tooltip {
@@ -814,12 +535,8 @@ body {
                 }
                 .pagination {
                     padding: 2px 1rem;
-            
-                    position: relative;
                     margin: 0rem 0.313rem 0rem auto;    
-                    // font-size: 1rem;
                     color: #5e5e5e;
-            
                     &:hover {
                         background-color: $iconHoverColor;
                         div {
@@ -830,21 +547,11 @@ body {
                         padding: 5px 0;
                     }
                     .pagination-option {
-                        position: absolute;
                         background-color:  $whiteColor;
                         width: 150%;
-                
-                        left: 0%;
-                        top: 100%;
                         visibility: hidden;
-                        z-index: 1;
                         p {
-                    
                             height: 2.5rem;
-                    
-                    
-                    
-                    
                             &:hover {
                                 background-color: $iconHoverColor;
                             } 
@@ -856,41 +563,27 @@ body {
                 }
                 .text-tooltip {
                     font-family: Google Sans, Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
-                    position: absolute;
-                    right: 0%; 
-                    top: 100%; 
                     background-color: $iconColor;
-                    // font-size: 1rem;
                     padding: 0.313rem 0.5rem;
                     color:  $whiteColor;
-            
                     visibility: hidden;
                 }
             }
             ul {
-                list-style: none;
-        
-        
                 height: 80%;
                 background-color: #fff;
                 border-radius: 0rem 0rem 1.25rem 1.25rem;
                 overflow: auto;
                 box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-        
-        
-        
                 li {
                     width: 99%;
                     height: 1.25rem;
                     background-color: $liHoverColor;
                     padding: 0.625rem 0rem;
-            
-            
                     border-bottom: $borderColor solid 1px;
                     border-top : transparent solid 2px;
                     border-left: transparent solid 2px;
                     border-right: transparent solid 2px;
-                    // overflow: hidden;
                     &:hover {
                         border: #DADCE0 solid 2px;
                         box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
@@ -916,9 +609,7 @@ body {
                     }
                     strong {
                         margin: 0rem 0.625rem 0rem 1.875rem;
-                        // font-size: 1rem;
                         width: 4.5rem;
-                
                     }
                     .name-email {
                         width: 10.5rem;
@@ -926,46 +617,28 @@ body {
                     }
                     span {
                         width: 70%;
-                        // text-overflow: ellipsis;
-                        // overflow: hidden;
-                        // white-space: nowrap;
                     }
                     .option-email-content {
-                
                         i {
-                    
                             width: 2rem;
                             height: 2rem;
-                    
-                    
-                    
-                            position: relative;
                             visibility: hidden;
                             width: 0;
                             &:hover {
                                 background-color: $iconHoverColor;
                             }
                         }
-                        .icon-down {
-                    
-                    
-                        }
                     }
                 }
                 .email-footer {
                     height: 2.5rem;
                     padding: 1rem 0rem 1rem 0rem;
-            
-            
-                    // font-size: 1rem;
                     color: #5f6368;
-            
                     border-radius: 0rem 0rem 1.25 1.25rem;
                     .using-memory {
                         padding-left: 1rem;
                     }
                     .details {
-                
                         padding-right: 1rem;
                     }
                 }

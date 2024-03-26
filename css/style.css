@@ -10,27 +10,22 @@ body .navbar {
   width: 5%;
   min-width: 4.25rem;
   background-color: #E9F1FB;
-  line-height: 1rem;
 }
 body .navbar .option li {
-  flex-direction: column;
   margin: 1.25rem auto 0rem auto;
 }
 body .navbar .option li p {
   color: #1f1f1f;
-  font-weight: 500;
-  margin: 0.375rem 0rem 0.375rem 0rem;
+  margin: 0.375rem 0rem;
 }
 body .navbar .option .first-option i {
   margin-top: 1.125rem;
   background-color: #d3e3fd;
   width: 2.75rem;
   height: 1.875rem;
-  position: relative;
 }
 body .navbar .option .first-option i .noti {
   background-color: #b3261e;
-  position: absolute;
   bottom: 1rem;
   left: 1.375rem;
   color: #fff;
@@ -40,19 +35,16 @@ body .navbar .option .first-option i .noti {
 }
 body .navbar .option .first-option p {
   color: #1f1f1f;
-  font-weight: 500;
 }
 body .navbar .option .option-content i {
   width: 2.75rem;
   height: 1.875rem;
-  position: relative;
 }
 body .navbar .option .option-content i:hover {
   background-color: #EAEBEF;
 }
 body .navbar .option .option-content p {
   color: #1f1f1f;
-  font-weight: 500;
 }
 body .right-content {
   width: 95%;
@@ -71,10 +63,6 @@ body .right-content .search-bar .logo img {
 }
 body .right-content .search-bar .search-box {
   width: 40%;
-  position: relative;
-}
-body .right-content .search-bar .search-box i {
-  position: absolute;
 }
 body .right-content .search-bar .search-box input {
   padding: 0 1.25rem 0 2.813rem;
@@ -92,12 +80,9 @@ body .right-content .search-bar .search-box input:focus + .table-search {
 }
 body .right-content .search-bar .search-box .table-search {
   background-color: #fff;
-  position: absolute;
-  top: 100%;
   display: none;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 0 0 1.25rem 1.25rem;
-  z-index: 1;
 }
 body .right-content .search-bar .search-box .table-search .top-content {
   height: 2.875rem;
@@ -129,7 +114,6 @@ body .right-content .search-bar .option .status-active {
   width: 30%;
   min-width: 5.125rem;
   margin: auto 0rem auto 0.313rem;
-  position: relative;
 }
 body .right-content .search-bar .option .status-active #toggleStatus:checked ~ .status-content {
   display: block;
@@ -147,12 +131,9 @@ body .right-content .search-bar .option .status-active button i:first-child {
   color: green;
 }
 body .right-content .search-bar .option .status-active .status-content {
-  position: absolute;
   top: 130%;
-  left: 50%;
   width: 150%;
   background-color: #fff;
-  z-index: 1;
   box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
 }
 body .right-content .search-bar .option .status-active .status-content p :first-child {
@@ -186,16 +167,13 @@ body .right-content .search-bar .option .option-content {
   width: 10rem;
 }
 body .right-content .search-bar .option .option-content ul {
-  list-style: none;
   padding: 0rem 0.313rem;
 }
 body .right-content .search-bar .option .option-content ul li {
-  list-style: none;
   width: 2.5rem;
   height: 2.5rem;
   margin: 0rem 0.313rem 0rem 0.313rem;
   color: gray;
-  position: relative;
 }
 body .right-content .search-bar .option .option-content ul li i:hover {
   background-color: #E8EAED;
@@ -205,11 +183,9 @@ body .right-content .search-bar .option .option-content ul li i:hover .tooltipte
 }
 body .right-content .search-bar .option .option-content ul li .tooltiptext {
   visibility: hidden;
-  position: absolute;
   background-color: #444746;
   color: #fff;
   padding: 0.125rem 0.625rem;
-  z-index: 1;
   top: 120%;
   left: -20%;
 }
@@ -229,12 +205,9 @@ body .right-content .search-bar .option .avatar .avatar-user {
   height: 2rem;
 }
 body .right-content .search-bar .option .avatar .popover {
-  left: 0%;
   min-width: 21.875rem;
   top: 130%;
-  z-index: 1;
   background-color: #dde0e6;
-  z-index: 2;
 }
 body .right-content .search-bar .option .avatar .popover .name-user .user-infomation .popover-top {
   padding-top: 1.2rem;
@@ -264,9 +237,6 @@ body .right-content .search-bar .option .avatar .popover .more-account .add-acco
 body .right-content .search-bar .option .avatar .popover .more-account .add-account i {
   padding: 0.313rem;
 }
-body .right-content .search-bar .option .avatar .popover .more-account .add-account p {
-  margin-left: 0.5rem;
-}
 body .right-content .search-bar .option .avatar .popover .more-account .add-account:hover {
   background-color: #bebebe;
 }
@@ -284,9 +254,6 @@ body .right-content .search-bar .option .avatar .popover .more-account .sign-out
 body .right-content .search-bar .option .avatar .popover .more-account .sign-out i {
   padding: 0.313rem;
 }
-body .right-content .search-bar .option .avatar .popover .more-account .sign-out p {
-  margin-left: 0.5rem;
-}
 body .right-content .search-bar .option .avatar .popover .more-account .sign-out:hover {
   background-color: #bebebe;
 }
@@ -303,20 +270,15 @@ body .right-content .search-bar .option .avatar .popover .policy .sign-out {
 body .right-content .search-bar .option .avatar .popover .policy p:hover {
   background-color: rgb(216, 210, 210);
 }
-body .right-content .content {
-  height: auto;
-}
 body .right-content .content .navbar-content {
   width: 20%;
   min-width: 16rem;
-  height: auto;
 }
 body .right-content .content .navbar-content .compose-button {
   height: 3.5rem;
   width: 8.625rem;
   background-color: #C1E7FF;
   margin: 0.625rem 0rem 0rem 0.625rem;
-  font-weight: 500;
 }
 body .right-content .content .navbar-content .compose-button i {
   margin-right: 0.75rem;
@@ -330,13 +292,8 @@ body .right-content .content .navbar-content .modal .modal-compose .modal-head {
 body .right-content .content .navbar-content .modal .modal-compose .modal-body {
   padding: 0 1rem;
 }
-body .right-content .content .navbar-content .modal .modal-compose .modal-body .modal-email-address {
-  position: relative;
-}
 body .right-content .content .navbar-content .modal .modal-compose .modal-body .modal-email-address .text-placeholder {
-  position: absolute;
   top: 13%;
-  left: 0%;
   display: none;
 }
 body .right-content .content .navbar-content .modal .modal-compose .modal-body .modal-email-address .input-email-address {
@@ -370,9 +327,6 @@ body .right-content .content .navbar-content .modal .modal-compose .modal-bottom
   height: 2.25rem;
   box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
 }
-body .right-content .content .navbar-content .modal .modal-compose .modal-bottom .option-text ul {
-  padding-left: 0;
-}
 body .right-content .content .navbar-content .modal .modal-compose .modal-bottom .option-text ul li {
   width: auto;
   padding: 4px 6px;
@@ -398,24 +352,17 @@ body .right-content .content .navbar-content .modal .modal-compose .modal-bottom
 body .right-content .content .navbar-content .modal .modal-compose .modal-bottom .option-send .button-down .down-icon {
   color: #fff;
 }
-body .right-content .content .navbar-content .modal .modal-compose .modal-bottom .option-send ul {
-  list-style: none;
-  padding-left: 0;
-}
 body .right-content .content .navbar-content .modal .modal-compose .modal-bottom .option-send ul li {
-  width: auto;
   padding: 4px 6px;
 }
 body .right-content .content .navbar-content .modal .modal-compose .modal-bottom .option-send ul li:hover {
   background-color: #E8EAED;
 }
 body .right-content .content .navbar-content .navbar-content-option {
-  list-style: none;
   padding: 0rem 0.5rem 0rem 0.625rem;
 }
 body .right-content .content .navbar-content .navbar-content-option li {
   height: 2rem;
-  position: relative;
 }
 body .right-content .content .navbar-content .navbar-content-option li:hover {
   background-color: #EAEBEF;
@@ -430,8 +377,6 @@ body .right-content .content .navbar-content .navbar-content-option li strong {
   margin: 0rem 0.75rem 0rem auto;
 }
 body .right-content .content .navbar-content .navbar-content-option li .text-tooltip {
-  position: absolute;
-  left: 100%;
   background-color: #444746;
   padding: 4px;
   color: #fff;
@@ -444,9 +389,7 @@ body .right-content .content .navbar-content .label {
   padding: 0rem 0.625rem 0rem 1.625rem;
 }
 body .right-content .content .email-content {
-  flex-grow: 1;
   width: 80%;
-  padding-left: 0.5rem;
 }
 body .right-content .content .email-content .email-option {
   height: 3rem;
@@ -480,18 +423,16 @@ body .right-content .content .email-content .email-option button .right-icon:hov
 }
 body .right-content .content .email-content .email-option button i .text-tooltip-pagination {
   font-family: Google Sans, Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
-  position: absolute;
   background-color: #444746;
   padding: 0.313rem 0.5rem;
   color: #fff;
-  top: 19%;
+  top: 12%;
   right: 3%;
   visibility: hidden;
 }
 body .right-content .content .email-content .email-option .scrooll-icon {
   padding: 0.625rem 4px;
   margin-right: 0.875rem;
-  position: relative;
   margin-right: 1.875rem;
 }
 body .right-content .content .email-content .email-option .scrooll-icon:hover {
@@ -502,9 +443,7 @@ body .right-content .content .email-content .email-option .scrooll-icon:hover .t
   visibility: visible;
 }
 body .right-content .content .email-content .email-option .arrow-icon {
-  padding: 0.5rem;
   margin-right: 0.875rem;
-  position: relative;
   color: #444746;
   margin-right: 1.875rem;
 }
@@ -516,7 +455,6 @@ body .right-content .content .email-content .email-option .arrow-icon:hover .tex
 }
 body .right-content .content .email-content .email-option .vertical-icon {
   padding: 0.5rem 0.875rem;
-  position: relative;
 }
 body .right-content .content .email-content .email-option .vertical-icon:hover {
   background-color: #EAEBEF;
@@ -526,7 +464,6 @@ body .right-content .content .email-content .email-option .vertical-icon:hover .
 }
 body .right-content .content .email-content .email-option .pagination {
   padding: 2px 1rem;
-  position: relative;
   margin: 0rem 0.313rem 0rem auto;
   color: #5e5e5e;
 }
@@ -540,13 +477,9 @@ body .right-content .content .email-content .email-option .pagination p {
   padding: 5px 0;
 }
 body .right-content .content .email-content .email-option .pagination .pagination-option {
-  position: absolute;
   background-color: #fff;
   width: 150%;
-  left: 0%;
-  top: 100%;
   visibility: hidden;
-  z-index: 1;
 }
 body .right-content .content .email-content .email-option .pagination .pagination-option p {
   height: 2.5rem;
@@ -559,16 +492,12 @@ body .right-content .content .email-content .email-option .pagination .paginatio
 }
 body .right-content .content .email-content .email-option .text-tooltip {
   font-family: Google Sans, Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
-  position: absolute;
-  right: 0%;
-  top: 100%;
   background-color: #444746;
   padding: 0.313rem 0.5rem;
   color: #fff;
   visibility: hidden;
 }
 body .right-content .content .email-content ul {
-  list-style: none;
   height: 80%;
   background-color: #fff;
   border-radius: 0rem 0rem 1.25rem 1.25rem;
@@ -620,7 +549,6 @@ body .right-content .content .email-content ul li span {
 body .right-content .content .email-content ul li .option-email-content i {
   width: 2rem;
   height: 2rem;
-  position: relative;
   visibility: hidden;
   width: 0;
 }
