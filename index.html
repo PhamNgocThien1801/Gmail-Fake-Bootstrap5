@@ -5,9 +5,6 @@
         <title>Gmail Fake FlexBox</title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google Sans|Roboto|RobotoDraft|Helvetica|Arial|sans-serif">
         <link href="./css/style.css" rel="stylesheet">
-        <!-- <link href="./node_modules/@fortawesome/fontawesome-free/css/brands.css" rel="stylesheet" />
-        <link href="./node_modules/@fortawesome/fontawesome-free/css/solid.css" rel="stylesheet" />
-        <link href="./node_modules/@fortawesome/fontawesome-free/css/regular.css" rel="stylesheet" /> -->
         <link href="./node_modules/@fortawesome/fontawesome-free/css/fontawesome.css" rel="stylesheet"  />
         <link href="./node_modules/@fortawesome/fontawesome-free/css/brands.css" rel="stylesheet" />
         <link href="./node_modules/@fortawesome/fontawesome-free/css/solid.css" rel="stylesheet" />
@@ -123,7 +120,7 @@
                             <div class="status-option d-flex ">
                                 <i class="fa-solid fa-circle circle-icon d-flex align-items-center mx-3 text-success"></i>
                                 <div class="status-option-content my-auto">
-                                    <p class="m-0 d-flex">Automatic</p>
+                                    <p class="m-0 d-flex text-dark">Automatic</p>
                                     <p class="describe m-0">Based on chat activity</p>
                                 </div>
                                 <i class="fa-solid fa-check check-icon d-flex align-items-center ms-auto me-3"></i>
@@ -163,17 +160,17 @@
                             <!-- option content -->
                             <li class="position-relative">
                                 <i class="fa-regular fa-circle-question p-2 mt-1 rounded-circle"></i>
-                                <span class="tooltiptext z-1 rounded-3 position-absolute">Support</span>
+                                <span class="tooltiptext p-1 z-1 rounded-3 position-absolute">Support</span>
                             </li>
                             <!-- option content -->
                             <li class="position-relative">
                                 <i class="fa-solid fa-gear p-2 mt-1 rounded-circle"></i>
-                                <span class="tooltiptext z-1 rounded-3 position-absolute">Settings</span>
+                                <span class="tooltiptext p-1 z-1 rounded-3 position-absolute">Settings</span>
                             </li>
                             <!-- option content -->
                             <li class="position-relative">
                                 <i class="fa-solid fa-list p-2 mt-1 rounded-circle"></i>
-                                <span class="tooltiptext z-1 rounded-3 position-absolute text-nowrap">Google apps</span>
+                                <span class="tooltiptext p-1 z-1 rounded-3 position-absolute text-nowrap">Google apps</span>
                             </li>
                         </ul>
                     </div>
@@ -230,10 +227,10 @@
                         <div class="modal-dialog position-fixed bottom-0 end-0 modal-compose me-5">
                             <div class="modal-content">
                                 <div class="modal-header modal-head">
-                                    <p class="modal-title">New Message</p>
+                                    <p class="modal-title ms-2">New Message</p>
                                     <input type="button" class="btn-close ps-auto close p-0 me-1" data-bs-dismiss="modal" />
                                 </div>
-                                <div class="modal-body">
+                                <div class="modal-body px-2">
                                     <div class="modal-email-address position-relative">
                                         <input type="text" placeholder="Recipients" class="input-email-address border-0 w-100"/>
                                         <span class="text-placeholder position-absolute d-none">To</span>
@@ -248,34 +245,34 @@
                                 <div class="modal-bottom p-3">
                                     <div class="option-text d-flex w-100 mb-3 rounded-2 shadow">
                                         <ul class="d-flex w-100 justify-content-between mb-0 list-unstyled ps-0">
-                                            <li class="rounded-2 d-flex align-items-center w-auto"><i class="fa-solid fa-left-long"></i></li>
-                                            <li class="rounded-2 d-flex align-items-center w-auto"><i class="fa-solid fa-right-long"></i></li>
-                                            <li class="rounded-2 d-flex align-items-center w-auto option-dropdown">Sans Serif<i class="fa-solid fa-caret-down down-icon d-flex align-items-center ps-2 h-100"></i></li>
-                                            <li class="rounded-2 d-flex align-items-center w-auto"><i class="fa-solid fa-text-height"></i></li>
-                                            <li class="rounded-2 d-flex align-items-center w-auto"><i class="fa-solid fa-b"></i></li>
-                                            <li class="rounded-2 d-flex align-items-center w-auto"><i class="fa-solid fa-italic"></i></li>
-                                            <li class="rounded-2 d-flex align-items-center w-auto"><i class="fa-solid fa-u"></i></li>
-                                            <li class="rounded-2 d-flex align-items-center w-auto option-dropdown"><i class="fa-solid fa-a"></i><i class="fa-solid fa-caret-down down-icon d-flex align-items-center h-100 ps-1"></i></li>
-                                            <li class="rounded-2 d-flex align-items-center w-auto option-dropdown"><i class="fa-solid fa-align-left"></i><i class="fa-solid fa-caret-down down-icon d-flex align-items-center h-100 ps-1"></i></li>
-                                            <li class="rounded-2 d-flex align-items-center w-auto"><i class="fa-solid fa-list-ul"></i></li>
-                                            <li class="rounded-2 d-flex align-items-center w-auto option-dropdown"><i class="fa-solid fa-caret-down down-icon d-flex align-items-center h-100"></i></li>
+                                            <li class="rounded-2 d-flex align-items-center w-auto m-1"><i class="fa-solid fa-left-long"></i></li>
+                                            <li class="rounded-2 d-flex align-items-center w-auto m-1"><i class="fa-solid fa-right-long"></i></li>
+                                            <li class="rounded-2 d-flex align-items-center w-auto option-dropdown m-1">Sans Serif<i class="fa-solid fa-caret-down down-icon d-flex align-items-center ps-2 h-100"></i></li>
+                                            <li class="rounded-2 d-flex align-items-center w-auto m-1"><i class="fa-solid fa-text-height"></i></li>
+                                            <li class="rounded-2 d-flex align-items-center w-auto m-1"><i class="fa-solid fa-b"></i></li>
+                                            <li class="rounded-2 d-flex align-items-center w-auto m-1"><i class="fa-solid fa-italic"></i></li>
+                                            <li class="rounded-2 d-flex align-items-center w-auto m-1"><i class="fa-solid fa-u"></i></li>
+                                            <li class="rounded-2 d-flex align-items-center w-auto m-1 option-dropdown"><i class="fa-solid fa-a"></i><i class="fa-solid fa-caret-down down-icon d-flex align-items-center h-100 ps-1"></i></li>
+                                            <li class="rounded-2 d-flex align-items-center w-auto m-1 option-dropdown"><i class="fa-solid fa-align-left"></i><i class="fa-solid fa-caret-down down-icon d-flex align-items-center h-100 ps-1"></i></li>
+                                            <li class="rounded-2 d-flex align-items-center w-auto m-1"><i class="fa-solid fa-list-ul"></i></li>
+                                            <li class="rounded-2 d-flex align-items-center w-auto m-1 option-dropdown"><i class="fa-solid fa-caret-down down-icon d-flex align-items-center h-100"></i></li>
                                         </ul>
                                     </div>
                                     <div class="option-send d-flex w-100">
                                         <button class="button-send border-0">Send</button>
                                         <button class="button-down p-0 border-0"><i class="fa-solid fa-caret-down down-icon"></i></button>
                                         <ul class="d-flex w-100 justify-content-between list-unstyled ps-0 align-items-center m-0">
-                                            <li class="rounded-2 w-auto p-1"><i class="fa-solid fa-a"></i></li>
-                                            <li class="rounded-2 w-auto p-1"><i class="fa-solid fa-paperclip"></i></li>
-                                            <li class="rounded-2 w-auto p-1"><i class="fa-solid fa-link"></i></li>
-                                            <li class="rounded-2 w-auto p-1"><i class="fa-regular fa-face-smile"></i></li>
-                                            <li class="rounded-2 w-auto p-1"><i class="fa-brands fa-google-drive"></i></li>
-                                            <li class="rounded-2 w-auto p-1"><i class="fa-regular fa-image"></i></li>
-                                            <li class="rounded-2 w-auto p-1"><i class="fa-solid fa-lock"></i></li>
-                                            <li class="rounded-2 w-auto p-1"><i class="fa-solid fa-pen-clip"></i></li>
-                                            <li class="rounded-2 w-auto p-1"><i class="fa-regular fa-calendar-xmark"></i></li>
-                                            <li class="rounded-2 w-auto p-1"><i class="fa-solid fa-ellipsis-vertical vertical-icon rounded-circle"></i></li>
-                                            <li class="rounded-2 w-auto p-1"><i class="fa-solid fa-trash-can "></i></li>
+                                            <li class="rounded-2 w-auto p-1 m-1"><i class="fa-solid fa-a"></i></li>
+                                            <li class="rounded-2 w-auto p-1 m-1"><i class="fa-solid fa-paperclip"></i></li>
+                                            <li class="rounded-2 w-auto p-1 m-1"><i class="fa-solid fa-link"></i></li>
+                                            <li class="rounded-2 w-auto p-1 m-1"><i class="fa-regular fa-face-smile"></i></li>
+                                            <li class="rounded-2 w-auto p-1 m-1"><i class="fa-brands fa-google-drive"></i></li>
+                                            <li class="rounded-2 w-auto p-1 m-1"><i class="fa-regular fa-image"></i></li>
+                                            <li class="rounded-2 w-auto p-1 m-1"><i class="fa-solid fa-lock"></i></li>
+                                            <li class="rounded-2 w-auto p-1 m-1"><i class="fa-solid fa-pen-clip"></i></li>
+                                            <li class="rounded-2 w-auto p-1 m-1"><i class="fa-regular fa-calendar-xmark"></i></li>
+                                            <li class="rounded-2 w-auto p-1 m-1"><i class="fa-solid fa-ellipsis-vertical vertical-icon rounded-circle"></i></li>
+                                            <li class="rounded-2 w-auto p-1 m-1"><i class="fa-solid fa-trash-can "></i></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -283,11 +280,11 @@
                         </div>
                       </div>
                     <ul class="mt-3 navbar-content-option position-relative list-unstyled">
-                        <li class="d-flex rounded-pill align-items-center w-auto"><i class="fa-solid fa-inbox"></i> Inbox <strong>194</strong><div class="text-tooltip start-100 position-absolute rounded-3">inbox</div></li>
-                        <li class="d-flex rounded-pill align-items-center w-auto"><i class="fa-regular fa-star"></i>Starred <div class="text-tooltip start-100 position-absolute rounded-3">Starred</div></li>
-                        <li class="d-flex rounded-pill align-items-center w-auto"><i class="fa-regular fa-clock"></i>Snoozed <div class="text-tooltip start-100 position-absolute rounded-3">Snoozed</div></li>
-                        <li class="d-flex rounded-pill align-items-center w-auto"><i class="fa-regular fa-paper-plane"></i>Sent <div class="text-tooltip start-100 position-absolute rounded-3">Sent</div></li>
-                        <li class="d-flex rounded-pill align-items-center w-auto"><i class="fa-regular fa-note-sticky"></i>Drafts <div class="text-tooltip start-100 position-absolute rounded-3">Drafts</div></li>
+                        <li class="d-flex rounded-pill align-items-center w-auto"><i class="fa-solid fa-inbox"></i> Inbox <strong class="p-1">194</strong><div class="text-tooltip p-1 start-100 position-absolute rounded-3">inbox</div></li>
+                        <li class="d-flex rounded-pill align-items-center w-auto"><i class="fa-regular fa-star"></i>Starred <div class="text-tooltip p-1 start-100 position-absolute rounded-3">Starred</div></li>
+                        <li class="d-flex rounded-pill align-items-center w-auto"><i class="fa-regular fa-clock"></i>Snoozed <div class="text-tooltip p-1 start-100 position-absolute rounded-3">Snoozed</div></li>
+                        <li class="d-flex rounded-pill align-items-center w-auto"><i class="fa-regular fa-paper-plane"></i>Sent <div class="text-tooltip p-1 start-100 position-absolute rounded-3">Sent</div></li>
+                        <li class="d-flex rounded-pill align-items-center w-auto"><i class="fa-regular fa-note-sticky"></i>Drafts <div class="text-tooltip p-1 start-100 position-absolute rounded-3">Drafts</div></li>
                         <li class="d-flex rounded-pill align-items-center w-auto"><i class="fa-solid fa-angle-down"></i></i>More</li>
                     </ul>
                     <!-- label -->
@@ -331,7 +328,7 @@
                         <li class="d-flex align-items-center overflow-hidden">
                             <input type="checkbox">
                             <i class="fa-regular fa-star"></i>
-                            <p class="name-email">Shopee</p>
+                            <p class="name-email mr-4">Shopee</p>
                             <span class="overflow-hidden text-nowrap text-truncate">Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> 
                             <strong class="text-end">11 Mar</strong>
                             <div class="option-email-content d-flex">
@@ -562,23 +559,22 @@
                                 <i class="fa-regular fa-clock icon-clock d-flex rounded-circle align-items-center justify-content-center"></i>
                             </div>
                         </li>
-                        <div class="email-footer d-flex justify-content-between ps-auto ">
-                            <p class="using-memory">Using 0.5GB</p> 
+                        <div class="email-footer d-flex justify-content-between ps-auto py-2">
+                            <p class="using-memory ps-2">Using 0.5GB</p> 
                             <div>
                                 <p>Programme Policies</p>
                                 <p>Powered by Google</p>
                             </div> 
                             <div>
-                                <p class="details text-end">Last account activity: 13 hours ago</p>
-                                <p class="details text-end">Details</p>
+                                <p class="details text-end pe-2">Last account activity: 13 hours ago</p>
+                                <p class="details text-end pe-2">Details</p>
                             </div>
                         </div>
                     </ul>
                 </div>
             </div>
         </div>
-        <script src="./js/index.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="./js/main.js"></script>
     </body>
     <footer>
     </footer>
