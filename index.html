@@ -59,7 +59,7 @@
                     <i class="fa-solid fa-magnifying-glass ps-3 position-absolute"></i>
                     <input type="text" placeholder="Search in emails" class="w-100 h-100 border-0"/>
                     <!-- table search -->
-                    <div class="table-search w-100 z-1 position-absolute top-100">
+                    <div class="table-search w-100 z-1 position-absolute top-100 d-none">
                         <div class="top-content d-flex align-items-center my-auto">
                             <button class="mx-1 py-1 px-2 rounded-3">Has attachment</button>
                             <button class="mx-1 py-1 px-2 rounded-3">Last 7 days</button>
@@ -112,7 +112,7 @@
                     <!-- status -->
                     <div class="status-active d-flex justify-content-end h-100 position-relative">
                         <!-- satus active -->
-                        <input type="checkbox" id="toggleStatus" >
+                        <input type="checkbox" id="toggleStatus" class="d-none">
                         <button class="rounded-pill mt-0 h-100 border-0">
                             <label class="toggleStatus" for="toggleStatus">
                                 <i class="fa-solid fa-circle px-2"></i>Active <i class="fa-solid fa-angle-down"></i>
@@ -183,7 +183,7 @@
                         <img class="logo-fpt d-flex my-auto" src="./images/logo-fpt.png" alt="logo-fpt"/>
                         <img class="avatar-user rounded-circle align-items-center my-auto" src="./images/user-img.jpg" alt="avatar"/>
                         <!-- popover -->
-                        <div class="popover rounded-3 position-absolute start-50 z-1 start-0" id="avatarPopover">
+                        <div class="popover rounded-3 position-absolute top-100 start-50 translate-middle-x z-1 d-none" id="avatarPopover">
                             <div class="name-user">
                                 <div class="user-infomation">
                                     <div class="top-popover">
@@ -231,12 +231,12 @@
                             <div class="modal-content">
                                 <div class="modal-header modal-head">
                                     <p class="modal-title">New Message</p>
-                                    <input type="button" class="btn-close ps-auto" data-bs-dismiss="modal" />
+                                    <input type="button" class="btn-close ps-auto close p-0 me-1" data-bs-dismiss="modal" />
                                 </div>
                                 <div class="modal-body">
                                     <div class="modal-email-address position-relative">
                                         <input type="text" placeholder="Recipients" class="input-email-address w-100"/>
-                                        <span class="text-placeholder position-absolute start-0">To</span>
+                                        <span class="text-placeholder position-absolute start-0 d-none">To</span>
                                     </div>
                                     <div class="modal-email-title">
                                         <input type="text" placeholder="Subject" class="w-100"/>
@@ -245,40 +245,37 @@
                                         <textarea type="text" class="input-compose w-100 border-0"></textarea>
                                     </div>
                                 </div>
-                                <div class="modal-bottom px-3">
-                                    <div class="option-text d-flex w-100 mb-3">
+                                <div class="modal-bottom p-3">
+                                    <div class="option-text d-flex w-100 mb-3 rounded-2">
                                         <ul class="d-flex w-100 justify-content-between mb-0 list-unstyled ps-0">
-                                            <li class="rounded-2"><i class="fa-solid fa-left-long"></i></li>
-                                            <li class="rounded-2"><i class="fa-solid fa-right-long"></i></li>
-                                            <li class="rounded-2">samsirrif<i class="fa-solid fa-caret-down down-icon ps-1"></i></li>
-                                            <li class="rounded-2"><i class="fa-solid fa-text-height"></i></li>
-                                            <li class="rounded-2"><i class="fa-solid fa-b"></i></li>
-                                            <li class="rounded-2"><i class="fa-solid fa-italic"></i></li>
-                                            <li class="rounded-2"><i class="fa-solid fa-u"></i></li>
-                                            <li class="rounded-2"><i class="fa-solid fa-a"></i></li>
-                                            <li class="rounded-2"><i class="fa-solid fa-align-left"></i></li>
-                                            <li class="rounded-2"><i class="fa-solid fa-list-ol"></i></li>
-                                            <li class="rounded-2"><i class="fa-solid fa-list-ul"></i></li>
-                                            <li class="rounded-2"><i class="fa-solid fa-outdent"></i></li>
-                                            <li class="rounded-2"><i class="fa-solid fa-right-from-bracket"></i></li>
-                                            <li class="rounded-2"><i class="fa-solid fa-caret-down down-icon"></i></li>
+                                            <li class="rounded-2 d-flex align-items-center"><i class="fa-solid fa-left-long"></i></li>
+                                            <li class="rounded-2 d-flex align-items-center"><i class="fa-solid fa-right-long"></i></li>
+                                            <li class="rounded-2 d-flex align-items-center option-dropdown">Sans Serif<i class="fa-solid fa-caret-down down-icon ps-2"></i></li>
+                                            <li class="rounded-2 d-flex align-items-center"><i class="fa-solid fa-text-height"></i></li>
+                                            <li class="rounded-2 d-flex align-items-center"><i class="fa-solid fa-b"></i></li>
+                                            <li class="rounded-2 d-flex align-items-center"><i class="fa-solid fa-italic"></i></li>
+                                            <li class="rounded-2 d-flex align-items-center"><i class="fa-solid fa-u"></i></li>
+                                            <li class="rounded-2 d-flex align-items-center option-dropdown"><i class="fa-solid fa-a"></i><i class="fa-solid fa-caret-down down-icon ps-1"></i></li>
+                                            <li class="rounded-2 d-flex align-items-center option-dropdown"><i class="fa-solid fa-align-left"></i><i class="fa-solid fa-caret-down down-icon ps-1"></i></li>
+                                            <li class="rounded-2 d-flex align-items-center"><i class="fa-solid fa-list-ul"></i></li>
+                                            <li class="rounded-2 d-flex align-items-center option-dropdown"><i class="fa-solid fa-caret-down down-icon"></i></li>
                                         </ul>
                                     </div>
                                     <div class="option-send d-flex w-100">
-                                        <button class="button-send border-0">send</button>
+                                        <button class="button-send border-0">Send</button>
                                         <button class="button-down p-0"><i class="fa-solid fa-caret-down down-icon"></i></button>
-                                        <ul class="d-flex w-100 justify-content-start list-unstyled ps-0">
-                                            <li class="rounded-2 w-auto"><i class="fa-solid fa-a"></i></li>
-                                            <li class="rounded-2 w-auto"><i class="fa-solid fa-paperclip"></i></li>
-                                            <li class="rounded-2 w-auto"><i class="fa-solid fa-link"></i></li>
-                                            <li class="rounded-2 w-auto"><i class="fa-regular fa-face-smile"></i></li>
-                                            <li class="rounded-2 w-auto"><i class="fa-brands fa-google-drive"></i></li>
-                                            <li class="rounded-2 w-auto"><i class="fa-regular fa-image"></i></li>
-                                            <li class="rounded-2 w-auto"><i class="fa-solid fa-lock"></i></li>
-                                            <li class="rounded-2 w-auto"><i class="fa-solid fa-pen-clip"></i></li>
-                                            <li class="rounded-2 w-auto"><i class="fa-regular fa-calendar-xmark"></i></li>
-                                            <li class="rounded-2 w-auto"><i class="fa-solid fa-ellipsis-vertical vertical-icon rounded-circle"></i></li>
-                                            <li class="icon-trash rounded-2 w-auto ms-auto"><i class="fa-solid fa-trash-can "></i></li>
+                                        <ul class="d-flex w-100 justify-content-between list-unstyled ps-0 align-items-center m-0">
+                                            <li class="rounded-2 w-auto p-1"><i class="fa-solid fa-a"></i></li>
+                                            <li class="rounded-2 w-auto p-1"><i class="fa-solid fa-paperclip"></i></li>
+                                            <li class="rounded-2 w-auto p-1"><i class="fa-solid fa-link"></i></li>
+                                            <li class="rounded-2 w-auto p-1"><i class="fa-regular fa-face-smile"></i></li>
+                                            <li class="rounded-2 w-auto p-1"><i class="fa-brands fa-google-drive"></i></li>
+                                            <li class="rounded-2 w-auto p-1"><i class="fa-regular fa-image"></i></li>
+                                            <li class="rounded-2 w-auto p-1"><i class="fa-solid fa-lock"></i></li>
+                                            <li class="rounded-2 w-auto p-1"><i class="fa-solid fa-pen-clip"></i></li>
+                                            <li class="rounded-2 w-auto p-1"><i class="fa-regular fa-calendar-xmark"></i></li>
+                                            <li class="rounded-2 w-auto p-1"><i class="fa-solid fa-ellipsis-vertical vertical-icon rounded-circle"></i></li>
+                                            <li class="rounded-2 w-auto p-1"><i class="fa-solid fa-trash-can "></i></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -331,7 +328,7 @@
                         </button>
                     </div>
                     <ul class="ps-0 m-0 list-unstyled">
-                        <li class="d-flex align-items-center py-3 overflow-hidden">
+                        <li class="d-flex align-items-center overflow-hidden">
                             <input type="checkbox">
                             <i class="fa-regular fa-star"></i>
                             <p class="name-email">Shopee</p>
@@ -349,7 +346,7 @@
                             <i class="fa-regular fa-star"></i>
                             <p class="name-email">Shopee</p>
                             <span class="overflow-hidden text-nowrap text-truncate">Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> 
-                            <strong class="text-end">11 Mar</strong>
+                            <strong class="text-end font-size-14">11 Mar</strong>
                             <div class="option-email-content d-flex">
                                 <i class="fa-solid fa-file-arrow-down icon-down d-flex rounded-circle align-items-center justify-content-center"></i>
                                 <i class="fa-regular fa-trash-can icon-trash d-flex rounded-circle align-items-center justify-content-center"></i>

@@ -15,6 +15,10 @@ $inputBackgroundColor: #EAF1FB;
 $liHoverColor: #F2F6FC;
 $greyColor: #AEB0AF;
 
+$font-size-14: 0.875rem;
+// @import '../node_modules/bootstrap/scss/variables';
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
 html {
     height: 100%;
 }
@@ -31,6 +35,7 @@ body {
             p {
                 color: $textColor;  
                 margin: 0.375rem 0rem;
+                font-size: 0.75rem;
             } 
         }
         .first-option {
@@ -40,6 +45,7 @@ body {
                 width: 2.75rem;
                 height: 1.875rem;
                 .noti {
+                    font-size: 0.6875rem;
                     background-color: $notiColor;            
                     bottom: 1rem;
                     left: 1.375rem;   
@@ -50,7 +56,8 @@ body {
                 }
             }
             p {
-                color: $textColor;        
+                color: $textColor;
+                font-size: 0.75rem;     
             }
         }
         .option-content {
@@ -62,7 +69,8 @@ body {
                 }
             }
             p {
-                color: $textColor;        
+                color: $textColor;
+                font-size: 0.75rem;        
             }
         }       
     }
@@ -71,10 +79,12 @@ body {
     width: 95%;
     height: 37.5rem;
     .search-bar {
+        background-color: $backgroundColor;
         height: 3rem;
         .logo {
             width: 20%;
             min-width: 16rem;
+            padding-left: 1.375rem;
             img {
                 width: 6.813rem;
                 height: 2.5rem;
@@ -93,12 +103,12 @@ body {
                     border-radius: 1.25rem 1.25rem 0 0;     
                 }  
                 &:focus +.table-search {
-                    display: block;
+                    display: block !important;
                 }
             }
             .table-search {
                 background-color:  $whiteColor;
-                display: none;
+                // display: none;
                 box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
                 border-radius: 0 0 1.25rem 1.25rem;
                 .top-content {
@@ -108,6 +118,7 @@ body {
                     button {
                         border: $borderColor solid 1px;
                         background-color:  $whiteColor;
+                        font-size: 0.813rem;
                         &:hover {
                             background-color: #e7eaee;
                         }
@@ -117,6 +128,7 @@ body {
                     ul { 
                         li {
                             border-left: white solid 2px;
+                            font-size: 0.875rem;
                             &:hover {
                                 background-color: $liHoverColor;
                                 border-left: rgb(103, 103, 235) solid 2px;
@@ -151,6 +163,10 @@ body {
                     }
                     i:first-child {
                         color: green;
+                        font-size: 0.75rem;
+                    }
+                    i {
+                        font-size: 0.625rem;
                     }
                 } 
                 .status-content {
@@ -169,6 +185,9 @@ body {
                             background-color: $hoverColor;
                             border-bottom: $iconColor;
                         }
+                        i {
+                            font-size: 0.875rem;
+                        }
                         .circle-icon {
                             color: green;
                         }
@@ -186,6 +205,7 @@ body {
                     }
                     .describe {
                         color: $greyColor;
+                        font-size: 0.75rem;
                     }
                 }  
             }
@@ -198,11 +218,12 @@ body {
                         height: 2.5rem;
                         margin: 0rem 0.313rem 0rem 0.313rem;
                         color: gray;
+                        font-size: 1.25rem;
                         i {
                             &:hover {
                                 background-color: $hoverColor;
                                 .tooltiptext {
-                                    visibility: visible;
+                                    visibility: visible !important;
                                 }
                             }
                         }
@@ -213,6 +234,7 @@ body {
                             padding: 0.125rem 0.625rem;
                             top: 120%;
                             left: -20%;
+                            font-size: 0.875rem;
                         }
                         &:hover {
                             .tooltiptext {
@@ -241,6 +263,12 @@ body {
                         .user-infomation {
                             .popover-top {
                                 padding-top: 1.2rem;
+                                p {
+                                    font-size: 0.875rem;
+                                }
+                                .managed {
+                                    font-size: 0.75rem;
+                                }
                             }
                             .popover-bottom {
                                 button {
@@ -249,6 +277,7 @@ body {
                                     border-radius: 6.25rem;
                                     border: 1px solid #747775;
                                     color: #0b57d0;
+                                    font-size: 0.875rem;
                                     :hover {
                                         background-color: #e1e9f7;
                                     }
@@ -269,7 +298,7 @@ body {
                             background-color:  $whiteColor;
                             border-radius: 6.25rem 0 0 6.25rem;
                             i {
-                                padding: 0.313rem; 
+                                padding: 0.313rem;
                             }
                             &:hover {
                                 background-color: $hoverAccountColor;
@@ -318,6 +347,7 @@ body {
         .navbar-content {
             width: 20%;
             min-width: 16rem;
+            background-color: $backgroundColor;
             .compose-button {
                 height: 3.5rem;
                 width: 8.625rem;
@@ -331,25 +361,32 @@ body {
                 .modal-compose {
                     min-width: 28.75rem;
                     .modal-head {
-                        height: 1.25rem;
+                        padding: 0.625rem 0.75rem 0.625rem 0;
+                        background-color: #F2F6FC;
+                        .modal-title{
+                            height: 1.25rem;
+                            margin-left: 1rem;
+                        }
+                        .close {
+                            font-size: 0.875rem;
+                        }
                     }
                     .modal-body {
                         padding: 0 1rem;
                         .modal-email-address {
                             .text-placeholder {
                                 top: 13%;
-                                display: none;
                             }
                             .input-email-address {
                                 border: none;
                                 height: 2.25rem;
-                                border-bottom: 1px solid black;
+                                border-bottom: 1px solid #ECEFF1;
                                 &:focus {
                                     outline: none;
                                     padding-left: 1.563rem;
                                 }
                                 &:focus + .text-placeholder {
-                                    display: block;
+                                    display: block !important;
                                 }
                             }                  
                         }
@@ -357,7 +394,7 @@ body {
                             input {
                                 border: none;
                                 height: 2.25rem;
-                                border-bottom: 1px solid black;
+                                border-bottom: 1px solid #ECEFF1;
                                 &:focus {
                                     outline: none;
                                 }
@@ -367,6 +404,7 @@ body {
                             .input-compose {
                                 height: 13.688rem;
                                 resize: none;
+                                padding: 0.625rem 0;
                                 &:focus {
                                     outline: none;
                                 }
@@ -381,8 +419,14 @@ body {
                                 li {
                                     width: auto;
                                     padding: 4px 6px;
+                                    margin: 4px;
                                     &:hover {
                                         background-color: $hoverColor;
+                                    }
+                                }
+                                .option-dropdown {
+                                    i:last-child {
+                                        font-size: 0.625rem;
                                     }
                                 }
                             }
@@ -390,25 +434,31 @@ body {
                         .option-send {
                             .button-send {
                                 height: 2.25rem;
+                                width: 4.5rem;
                                 padding: 0 1rem;
                                 background-color: #0b57d0;
                                 border-radius: 6.25rem 0 0 6.25rem;
-                                color: $whiteColor;
+                                color: $whiteColor;    
                             }
                             .button-down {
                                 border: none;
                                 border-left: solid 1px black;
                                 background-color: #0b57d0;
                                 height: 2.25rem;
-                                width: 2rem;
+                                min-width: 2rem;
                                 border-radius: 0 6.25rem 6.25rem 0;
                                 .down-icon {
                                     color: $whiteColor;
+                                    font-size: 0.625rem;
+                                    height: 100%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
                                 }
                             }
                             ul {
                                 li {
-                                    padding: 4px 6px;
+                                    margin: 4px;
                                     &:hover {
                                         background-color: $hoverColor;
                                     }
@@ -433,13 +483,14 @@ body {
                     }
                     strong {
                         margin: 0rem 0.75rem 0rem auto;
-                        
+                        font-size: 0.75rem;                        
                     }
                     .text-tooltip {
                         background-color: $iconColor;
                         padding: 4px;
                         color:  $whiteColor;
                         visibility: hidden;
+                        font-size: 0.75rem;                        
                     }
                 }
                 li:first-child {
@@ -451,6 +502,7 @@ body {
             }
         }
         .email-content {
+            background-color: $backgroundColor;
             width: 80%;
             .email-option {
                 height: 3rem;
@@ -497,6 +549,7 @@ body {
                             top: 12%;
                             right: 3%;
                             visibility: hidden;
+                            font-size: 0.875rem;
                         }
                     }
                     
@@ -505,6 +558,7 @@ body {
                     padding: 0.625rem 4px;
                     margin-right: 0.875rem;
                     margin-right: 1.875rem;
+                    font-size: 0.625rem;
                     &:hover {
                         background-color: $iconHoverColor;
                         border-radius: 0.313rem;
@@ -517,6 +571,8 @@ body {
                     margin-right: 0.875rem;
                     color: $iconColor;
                     margin-right: 1.875rem;
+                    font-size: 0.875rem;
+
                     &:hover {
                         background-color: $iconHoverColor;
                         .text-tooltip {
@@ -537,6 +593,7 @@ body {
                     padding: 2px 1rem;
                     margin: 0rem 0.313rem 0rem auto;    
                     color: #5e5e5e;
+                    font-size: 0.75rem;
                     &:hover {
                         background-color: $iconHoverColor;
                         div {
@@ -567,17 +624,18 @@ body {
                     padding: 0.313rem 0.5rem;
                     color:  $whiteColor;
                     visibility: hidden;
+                    font-size: 0.875rem;
                 }
             }
             ul {
                 height: 80%;
-                background-color: #fff;
+                background-color: $whiteColor;
                 border-radius: 0rem 0rem 1.25rem 1.25rem;
                 overflow: auto;
                 box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
                 li {
                     width: 99%;
-                    height: 1.25rem;
+                    height: 2.7rem;
                     background-color: $liHoverColor;
                     padding: 0.625rem 0rem;
                     border-bottom: $borderColor solid 1px;
@@ -610,6 +668,7 @@ body {
                     strong {
                         margin: 0rem 0.625rem 0rem 1.875rem;
                         width: 4.5rem;
+                        font-size: 0.75rem;
                     }
                     .name-email {
                         width: 10.5rem;
@@ -631,6 +690,7 @@ body {
                     }
                 }
                 .email-footer {
+                    font-size: 0.75rem;
                     height: 2.5rem;
                     padding: 1rem 0rem 1rem 0rem;
                     color: #5f6368;
@@ -646,19 +706,16 @@ body {
         }
     }
 }
-#toggleStatus {
-    display: none;
-}
+// #toggleStatus {
+//     display: none;
+// }
 #toggleStatus:checked ~ .status-content {
     display: block;
 }
 #toggleStatus:not(:checked) ~ .status-content {
     display: none;
 }
-.popover {
-    display: none;
-}
 .popover.active {
-    display: block;
+    display: block !important;
 }
 }
