@@ -11844,10 +11844,6 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-html {
-  height: 100%;
-}
-
 body {
   background-color: #F6F8FC;
   font-family: Google Sans, Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
@@ -11932,7 +11928,6 @@ body .right-content .search-bar .search-box input:focus + .table-search {
 }
 body .right-content .search-bar .search-box .table-search {
   background-color: #fff;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 0 0 1.25rem 1.25rem;
 }
 body .right-content .search-bar .search-box .table-search .top-content {
@@ -11981,7 +11976,6 @@ body .right-content .search-bar .option .status-active button:hover {
   background-color: #EAF1FB;
 }
 body .right-content .search-bar .option .status-active button i:first-child {
-  color: green;
   font-size: 0.75rem;
 }
 body .right-content .search-bar .option .status-active button i {
@@ -11991,7 +11985,6 @@ body .right-content .search-bar .option .status-active .status-content {
   top: 130%;
   width: 150%;
   background-color: #fff;
-  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
 }
 body .right-content .search-bar .option .status-active .status-content p :first-child {
   color: black;
@@ -12005,12 +11998,6 @@ body .right-content .search-bar .option .status-active .status-content .status-o
 }
 body .right-content .search-bar .option .status-active .status-content .status-option i {
   font-size: 0.875rem;
-}
-body .right-content .search-bar .option .status-active .status-content .status-option .circle-icon {
-  color: green;
-}
-body .right-content .search-bar .option .status-active .status-content .status-option .ban-icon {
-  color: red;
 }
 body .right-content .search-bar .option .status-active .status-content .status-action {
   height: 2.5rem;
@@ -12049,8 +12036,9 @@ body .right-content .search-bar .option .option-content ul li .tooltiptext {
   color: #fff;
   padding: 0.125rem 0.625rem;
   top: 120%;
-  left: -20%;
+  left: 20%;
   font-size: 0.875rem;
+  padding: 4px;
 }
 body .right-content .search-bar .option .option-content ul li:hover .tooltiptext {
   visibility: visible;
@@ -12069,8 +12057,9 @@ body .right-content .search-bar .option .avatar .avatar-user {
 }
 body .right-content .search-bar .option .avatar .popover {
   min-width: 21.875rem;
-  top: 130%;
   background-color: #dde0e6;
+  top: 120%;
+  left: 39%;
 }
 body .right-content .search-bar .option .avatar .popover .name-user .user-infomation .popover-top {
   padding-top: 1.2rem;
@@ -12089,7 +12078,7 @@ body .right-content .search-bar .option .avatar .popover .name-user .user-infoma
   color: #0b57d0;
   font-size: 0.875rem;
 }
-body .right-content .search-bar .option .avatar .popover .name-user .user-infomation .popover-bottom button :hover {
+body .right-content .search-bar .option .avatar .popover .name-user .user-infomation .popover-bottom button:hover {
   background-color: #e1e9f7;
 }
 body .right-content .search-bar .option .avatar .popover .name-user .user-infomation .popover-bottom .avatar-user {
@@ -12145,6 +12134,9 @@ body .right-content .content .navbar-content {
   min-width: 16rem;
   background-color: #F6F8FC;
 }
+body .right-content .content .navbar-content button:hover {
+  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+}
 body .right-content .content .navbar-content .compose-button {
   height: 3.5rem;
   width: 8.625rem;
@@ -12172,12 +12164,11 @@ body .right-content .content .navbar-content .modal .modal-compose .modal-body {
   padding: 0 1rem;
 }
 body .right-content .content .navbar-content .modal .modal-compose .modal-body .modal-email-address .text-placeholder {
-  top: 13%;
+  top: 25%;
 }
 body .right-content .content .navbar-content .modal .modal-compose .modal-body .modal-email-address .input-email-address {
-  border: none;
   height: 2.25rem;
-  border-bottom: 1px solid #ECEFF1;
+  border-bottom: 1px solid #ECEFF1 !important;
 }
 body .right-content .content .navbar-content .modal .modal-compose .modal-body .modal-email-address .input-email-address:focus {
   outline: none;
@@ -12187,9 +12178,8 @@ body .right-content .content .navbar-content .modal .modal-compose .modal-body .
   display: block !important;
 }
 body .right-content .content .navbar-content .modal .modal-compose .modal-body .modal-email-title input {
-  border: none;
   height: 2.25rem;
-  border-bottom: 1px solid #ECEFF1;
+  border-bottom: 1px solid #ECEFF1 !important;
 }
 body .right-content .content .navbar-content .modal .modal-compose .modal-body .modal-email-title input:focus {
   outline: none;
@@ -12204,10 +12194,8 @@ body .right-content .content .navbar-content .modal .modal-compose .modal-body .
 }
 body .right-content .content .navbar-content .modal .modal-compose .modal-bottom .option-text {
   height: 2.25rem;
-  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
 }
 body .right-content .content .navbar-content .modal .modal-compose .modal-bottom .option-text ul li {
-  width: auto;
   padding: 4px 6px;
   margin: 4px;
 }
@@ -12226,8 +12214,7 @@ body .right-content .content .navbar-content .modal .modal-compose .modal-bottom
   color: #fff;
 }
 body .right-content .content .navbar-content .modal .modal-compose .modal-bottom .option-send .button-down {
-  border: none;
-  border-left: solid 1px black;
+  border-left: solid 1px black !important;
   background-color: #0b57d0;
   height: 2.25rem;
   min-width: 2rem;
@@ -12236,10 +12223,6 @@ body .right-content .content .navbar-content .modal .modal-compose .modal-bottom
 body .right-content .content .navbar-content .modal .modal-compose .modal-bottom .option-send .button-down .down-icon {
   color: #fff;
   font-size: 0.625rem;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 body .right-content .content .navbar-content .modal .modal-compose .modal-bottom .option-send ul li {
   margin: 4px;
@@ -12265,6 +12248,7 @@ body .right-content .content .navbar-content .navbar-content-option li i {
 body .right-content .content .navbar-content .navbar-content-option li strong {
   margin: 0rem 0.75rem 0rem auto;
   font-size: 0.75rem;
+  padding: 4px;
 }
 body .right-content .content .navbar-content .navbar-content-option li .text-tooltip {
   background-color: #444746;
@@ -12297,20 +12281,14 @@ body .right-content .content .email-content .email-option input {
 body .right-content .content .email-content .email-option button {
   background-color: #fff;
   color: #AEB0AF;
-}
-body .right-content .content .email-content .email-option button :last-child {
+  width: 2.5rem;
+  height: 2.5rem;
   color: #1f1f1f;
 }
-body .right-content .content .email-content .email-option button :last-child:hover {
+body .right-content .content .email-content .email-option button:hover {
   background-color: #EAEBEF;
-  border-radius: 50%;
-  width: 1.3rem;
-  height: 1.3rem;
 }
-body .right-content .content .email-content .email-option button .left-icon:hover .text-tooltip-pagination {
-  visibility: visible;
-}
-body .right-content .content .email-content .email-option button .right-icon:hover .text-tooltip-pagination {
+body .right-content .content .email-content .email-option button:hover .text-tooltip-pagination {
   visibility: visible;
 }
 body .right-content .content .email-content .email-option button i .text-tooltip-pagination {
@@ -12398,8 +12376,6 @@ body .right-content .content .email-content ul {
   height: 80%;
   background-color: #fff;
   border-radius: 0rem 0rem 1.25rem 1.25rem;
-  overflow: auto;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 body .right-content .content .email-content ul li {
   width: 99%;

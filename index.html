@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-100">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Gmail Fake FlexBox</title>
@@ -59,7 +59,7 @@
                     <i class="fa-solid fa-magnifying-glass ps-3 position-absolute"></i>
                     <input type="text" placeholder="Search in emails" class="w-100 h-100 border-0"/>
                     <!-- table search -->
-                    <div class="table-search w-100 z-1 position-absolute top-100 d-none">
+                    <div class="table-search w-100 z-1 position-absolute top-100 d-none shadow">
                         <div class="top-content d-flex align-items-center my-auto">
                             <button class="mx-1 py-1 px-2 rounded-3">Has attachment</button>
                             <button class="mx-1 py-1 px-2 rounded-3">Last 7 days</button>
@@ -115,13 +115,13 @@
                         <input type="checkbox" id="toggleStatus" class="d-none">
                         <button class="rounded-pill mt-0 h-100 border-0">
                             <label class="toggleStatus" for="toggleStatus">
-                                <i class="fa-solid fa-circle px-2"></i>Active <i class="fa-solid fa-angle-down"></i>
+                                <i class="fa-solid fa-circle px-2 text-success"></i>Active <i class="fa-solid fa-angle-down"></i>
                             </label>
                         </button>
                         <!-- popover satus content -->
-                        <div class="status-content z-1 py-2 rounded-3 position-absolute start-50">
+                        <div class="status-content z-1 py-2 rounded-3 position-absolute start-50 shadow">
                             <div class="status-option d-flex ">
-                                <i class="fa-solid fa-circle circle-icon d-flex align-items-center mx-3"></i>
+                                <i class="fa-solid fa-circle circle-icon d-flex align-items-center mx-3 text-success"></i>
                                 <div class="status-option-content my-auto">
                                     <p class="m-0 d-flex">Automatic</p>
                                     <p class="describe m-0">Based on chat activity</p>
@@ -129,7 +129,7 @@
                                 <i class="fa-solid fa-check check-icon d-flex align-items-center ms-auto me-3"></i>
                             </div>
                             <div class="status-option d-flex">
-                                <i class="fa-solid fa-ban ban-icon align-items-center d-flex mx-3"></i>
+                                <i class="fa-solid fa-ban ban-icon align-items-center d-flex mx-3 text-danger"></i>
                                 <div class="status-option-content my-auto">
                                     <p class="m-0">Do not disturb</p>
                                     <p class="describe m-0">Mute chat notifications</p>
@@ -150,7 +150,7 @@
                                 </div>
                             </div>
                             <div class="status-option d-flex">
-                                <div class="status-option-content my-auto">
+                                <div class="status-option-content my-auto w-100 text-center">
                                     <p class="describe-action m-0">Chat notification settings</p>
                                 </div>
                                 <div></div>
@@ -183,7 +183,7 @@
                         <img class="logo-fpt d-flex my-auto" src="./images/logo-fpt.png" alt="logo-fpt"/>
                         <img class="avatar-user rounded-circle align-items-center my-auto" src="./images/user-img.jpg" alt="avatar"/>
                         <!-- popover -->
-                        <div class="popover rounded-3 position-absolute top-100 start-50 translate-middle-x z-1 d-none" id="avatarPopover">
+                        <div class="popover rounded-4 position-absolute z-1 d-none" id="avatarPopover">
                             <div class="name-user">
                                 <div class="user-infomation">
                                     <div class="top-popover">
@@ -235,35 +235,35 @@
                                 </div>
                                 <div class="modal-body">
                                     <div class="modal-email-address position-relative">
-                                        <input type="text" placeholder="Recipients" class="input-email-address w-100"/>
-                                        <span class="text-placeholder position-absolute start-0 d-none">To</span>
+                                        <input type="text" placeholder="Recipients" class="input-email-address border-0 w-100"/>
+                                        <span class="text-placeholder position-absolute d-none">To</span>
                                     </div>
                                     <div class="modal-email-title">
-                                        <input type="text" placeholder="Subject" class="w-100"/>
+                                        <input type="text" placeholder="Subject" class="w-100 border-0"/>
                                     </div>
                                     <div class="modal-email-content">
                                         <textarea type="text" class="input-compose w-100 border-0"></textarea>
                                     </div>
                                 </div>
                                 <div class="modal-bottom p-3">
-                                    <div class="option-text d-flex w-100 mb-3 rounded-2">
+                                    <div class="option-text d-flex w-100 mb-3 rounded-2 shadow">
                                         <ul class="d-flex w-100 justify-content-between mb-0 list-unstyled ps-0">
-                                            <li class="rounded-2 d-flex align-items-center"><i class="fa-solid fa-left-long"></i></li>
-                                            <li class="rounded-2 d-flex align-items-center"><i class="fa-solid fa-right-long"></i></li>
-                                            <li class="rounded-2 d-flex align-items-center option-dropdown">Sans Serif<i class="fa-solid fa-caret-down down-icon ps-2"></i></li>
-                                            <li class="rounded-2 d-flex align-items-center"><i class="fa-solid fa-text-height"></i></li>
-                                            <li class="rounded-2 d-flex align-items-center"><i class="fa-solid fa-b"></i></li>
-                                            <li class="rounded-2 d-flex align-items-center"><i class="fa-solid fa-italic"></i></li>
-                                            <li class="rounded-2 d-flex align-items-center"><i class="fa-solid fa-u"></i></li>
-                                            <li class="rounded-2 d-flex align-items-center option-dropdown"><i class="fa-solid fa-a"></i><i class="fa-solid fa-caret-down down-icon ps-1"></i></li>
-                                            <li class="rounded-2 d-flex align-items-center option-dropdown"><i class="fa-solid fa-align-left"></i><i class="fa-solid fa-caret-down down-icon ps-1"></i></li>
-                                            <li class="rounded-2 d-flex align-items-center"><i class="fa-solid fa-list-ul"></i></li>
-                                            <li class="rounded-2 d-flex align-items-center option-dropdown"><i class="fa-solid fa-caret-down down-icon"></i></li>
+                                            <li class="rounded-2 d-flex align-items-center w-auto"><i class="fa-solid fa-left-long"></i></li>
+                                            <li class="rounded-2 d-flex align-items-center w-auto"><i class="fa-solid fa-right-long"></i></li>
+                                            <li class="rounded-2 d-flex align-items-center w-auto option-dropdown">Sans Serif<i class="fa-solid fa-caret-down down-icon d-flex align-items-center ps-2 h-100"></i></li>
+                                            <li class="rounded-2 d-flex align-items-center w-auto"><i class="fa-solid fa-text-height"></i></li>
+                                            <li class="rounded-2 d-flex align-items-center w-auto"><i class="fa-solid fa-b"></i></li>
+                                            <li class="rounded-2 d-flex align-items-center w-auto"><i class="fa-solid fa-italic"></i></li>
+                                            <li class="rounded-2 d-flex align-items-center w-auto"><i class="fa-solid fa-u"></i></li>
+                                            <li class="rounded-2 d-flex align-items-center w-auto option-dropdown"><i class="fa-solid fa-a"></i><i class="fa-solid fa-caret-down down-icon d-flex align-items-center h-100 ps-1"></i></li>
+                                            <li class="rounded-2 d-flex align-items-center w-auto option-dropdown"><i class="fa-solid fa-align-left"></i><i class="fa-solid fa-caret-down down-icon d-flex align-items-center h-100 ps-1"></i></li>
+                                            <li class="rounded-2 d-flex align-items-center w-auto"><i class="fa-solid fa-list-ul"></i></li>
+                                            <li class="rounded-2 d-flex align-items-center w-auto option-dropdown"><i class="fa-solid fa-caret-down down-icon d-flex align-items-center h-100"></i></li>
                                         </ul>
                                     </div>
                                     <div class="option-send d-flex w-100">
                                         <button class="button-send border-0">Send</button>
-                                        <button class="button-down p-0"><i class="fa-solid fa-caret-down down-icon"></i></button>
+                                        <button class="button-down p-0 border-0"><i class="fa-solid fa-caret-down down-icon"></i></button>
                                         <ul class="d-flex w-100 justify-content-between list-unstyled ps-0 align-items-center m-0">
                                             <li class="rounded-2 w-auto p-1"><i class="fa-solid fa-a"></i></li>
                                             <li class="rounded-2 w-auto p-1"><i class="fa-solid fa-paperclip"></i></li>
@@ -316,18 +316,18 @@
                                 <p class="d-flex my-auto align-items-center justify-content-center">Oldest</p>
                             </div>
                         </div>
-                        <button class="rounded-circle border-0">
+                        <button class="rounded-circle border-0 p-0 rounded-circle">
                             <i class="fa-solid fa-chevron-left left-icon">
                                 <div class="text-tooltip-pagination position-absolute rounded-3">Newer</div>
                             </i>
                         </button>
-                        <button class="right-icon rounded-circle border-0">
+                        <button class="right-icon rounded-circle border-0 p-0 rounded-circle">
                             <i class="fa-solid fa-chevron-right right-icon">
                                 <div class="text-tooltip-pagination position-absolute rounded-3">Older</div>
                             </i>
                         </button>
                     </div>
-                    <ul class="ps-0 m-0 list-unstyled">
+                    <ul class="ps-0 m-0 list-unstyled shadow overflow-auto">
                         <li class="d-flex align-items-center overflow-hidden">
                             <input type="checkbox">
                             <i class="fa-regular fa-star"></i>

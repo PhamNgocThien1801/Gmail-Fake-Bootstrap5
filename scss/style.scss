@@ -14,14 +14,9 @@ $iconBackgroundColor: #d3e3fd;
 $inputBackgroundColor: #EAF1FB;
 $liHoverColor: #F2F6FC;
 $greyColor: #AEB0AF;
-
 $font-size-14: 0.875rem;
-// @import '../node_modules/bootstrap/scss/variables';
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 
-html {
-    height: 100%;
-}
 body {
     background-color: $backgroundColor;
     font-family: Google Sans, Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
@@ -108,8 +103,6 @@ body {
             }
             .table-search {
                 background-color:  $whiteColor;
-                // display: none;
-                box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
                 border-radius: 0 0 1.25rem 1.25rem;
                 .top-content {
                     height: 2.875rem;
@@ -162,7 +155,6 @@ body {
                         background-color: $inputBackgroundColor;
                     }
                     i:first-child {
-                        color: green;
                         font-size: 0.75rem;
                     }
                     i {
@@ -173,7 +165,6 @@ body {
                     top: 130%;
                     width: 150%;
                     background-color:  $whiteColor;
-                    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
                     p {
                         :first-child {
                             color: black;
@@ -187,12 +178,6 @@ body {
                         }
                         i {
                             font-size: 0.875rem;
-                        }
-                        .circle-icon {
-                            color: green;
-                        }
-                        .ban-icon {
-                            color: red;
                         }
                     }
                     .status-action {
@@ -233,8 +218,9 @@ body {
                             color:  $whiteColor;    
                             padding: 0.125rem 0.625rem;
                             top: 120%;
-                            left: -20%;
+                            left: 20%;
                             font-size: 0.875rem;
+                            padding: 4px;
                         }
                         &:hover {
                             .tooltiptext {
@@ -257,8 +243,9 @@ body {
                 }
                 .popover {
                     min-width: 21.875rem;
-                    top: 130%;
-                    background-color: $popoverColor;            
+                    background-color: $popoverColor;
+                    top: 120%;
+                    left: 39%;       
                     .name-user {
                         .user-infomation {
                             .popover-top {
@@ -278,7 +265,7 @@ body {
                                     border: 1px solid #747775;
                                     color: #0b57d0;
                                     font-size: 0.875rem;
-                                    :hover {
+                                    &:hover {
                                         background-color: #e1e9f7;
                                     }
                                 }
@@ -348,6 +335,11 @@ body {
             width: 20%;
             min-width: 16rem;
             background-color: $backgroundColor;
+            button {
+                &:hover {
+                    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+                }
+            }
             .compose-button {
                 height: 3.5rem;
                 width: 8.625rem;
@@ -375,12 +367,12 @@ body {
                         padding: 0 1rem;
                         .modal-email-address {
                             .text-placeholder {
-                                top: 13%;
+                                top: 25%;
                             }
                             .input-email-address {
-                                border: none;
+                                // border: none;
                                 height: 2.25rem;
-                                border-bottom: 1px solid #ECEFF1;
+                                border-bottom: 1px solid #ECEFF1 !important;
                                 &:focus {
                                     outline: none;
                                     padding-left: 1.563rem;
@@ -392,9 +384,9 @@ body {
                         }
                         .modal-email-title {
                             input {
-                                border: none;
+                                // border: none;
                                 height: 2.25rem;
-                                border-bottom: 1px solid #ECEFF1;
+                                border-bottom: 1px solid #ECEFF1 !important;
                                 &:focus {
                                     outline: none;
                                 }
@@ -414,10 +406,8 @@ body {
                     .modal-bottom {
                         .option-text {
                             height: 2.25rem;
-                            box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
                             ul {
                                 li {
-                                    width: auto;
                                     padding: 4px 6px;
                                     margin: 4px;
                                     &:hover {
@@ -441,8 +431,8 @@ body {
                                 color: $whiteColor;    
                             }
                             .button-down {
-                                border: none;
-                                border-left: solid 1px black;
+                                // border: none;
+                                border-left: solid 1px black !important;
                                 background-color: #0b57d0;
                                 height: 2.25rem;
                                 min-width: 2rem;
@@ -450,10 +440,6 @@ body {
                                 .down-icon {
                                     color: $whiteColor;
                                     font-size: 0.625rem;
-                                    height: 100%;
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: center;
                                 }
                             }
                             ul {
@@ -483,7 +469,8 @@ body {
                     }
                     strong {
                         margin: 0rem 0.75rem 0rem auto;
-                        font-size: 0.75rem;                        
+                        font-size: 0.75rem;   
+                        padding: 4px;                     
                     }
                     .text-tooltip {
                         background-color: $iconColor;
@@ -517,27 +504,15 @@ body {
                 button {
                     background-color:  $whiteColor;
                     color: $greyColor;
-                    :last-child {
-                        color: $textColor;
-                        &:hover {
-                            background-color: $iconHoverColor;
-                            border-radius: 50%;
-                            width: 1.3rem;
-                            height: 1.3rem;
-                        }
+                    width: 2.5rem;
+                    height: 2.5rem;
+                    color: $textColor;
+                    &:hover {
+                        background-color: $iconHoverColor;
                     }
-                    .left-icon {
-                        &:hover {
-                            .text-tooltip-pagination {
-                                visibility: visible;
-                            }
-                        }
-                    }
-                    .right-icon {
-                        &:hover {
-                            .text-tooltip-pagination {
-                                visibility: visible;
-                            }
+                    &:hover {
+                        .text-tooltip-pagination {
+                            visibility: visible;
                         }
                     }
                     i {
@@ -631,8 +606,6 @@ body {
                 height: 80%;
                 background-color: $whiteColor;
                 border-radius: 0rem 0rem 1.25rem 1.25rem;
-                overflow: auto;
-                box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
                 li {
                     width: 99%;
                     height: 2.7rem;
@@ -706,9 +679,6 @@ body {
         }
     }
 }
-// #toggleStatus {
-//     display: none;
-// }
 #toggleStatus:checked ~ .status-content {
     display: block;
 }
